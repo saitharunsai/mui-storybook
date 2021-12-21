@@ -1,10 +1,13 @@
-import type { Meta, Story } from '@storybook/react'
+import { ThemeProvider } from '@mui/material/styles'
+import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import MyAppBar from './MyAppBar'
+import theme from '../../theme'
 
-const meta: Meta = {
+import AppBar from './'
+
+const meta: ComponentMeta<any> = {
   title: 'Components/AppBar',
-  component: MyAppBar,
+  component: AppBar,
   parameters: {
     controls: { expanded: true },
   },
@@ -12,8 +15,11 @@ const meta: Meta = {
 
 export default meta
 
-// @ts-ignore
-const Template: Story = (props) => <MyAppBar {...props}>Hello</MyAppBar>
+const Template: ComponentStory<any> = () => (
+  <ThemeProvider theme={theme}>
+    <AppBar />
+  </ThemeProvider>
+)
 
 export const Default = Template.bind({})
 Default.args = {}
