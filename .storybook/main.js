@@ -6,7 +6,6 @@ module.exports = {
   'addons': [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    'storybook-addon-material-ui5'
   ],
   'framework': '@storybook/react',
   'core': {
