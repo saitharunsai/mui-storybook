@@ -9,7 +9,7 @@ const meta: ComponentMeta<any> = {
   title: 'Components/AppBar',
   component: AppBar,
   parameters: {
-    controls: { expanded: true },
+    color: {},
   },
 }
 
@@ -21,5 +21,5 @@ const Template: ComponentStory<any> = () => (
   </ThemeProvider>
 )
 
-export const Default = Template.bind({})
-Default.args = {}
+export const Primary = Template.bind({})
+Primary.args = {}
