@@ -4,8 +4,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider as ReduxProvider } from 'react-redux'
 
-import App from './App'
 import { store } from './app/store'
+import Routes from './Routes'
 import theme from './theme'
 
 ReactDOM.render(
@@ -13,7 +13,7 @@ ReactDOM.render(
     <ReduxProvider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <App />
+        <Routes />
       </ThemeProvider>
     </ReduxProvider>
   </React.StrictMode>,
