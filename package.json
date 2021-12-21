@@ -13,8 +13,7 @@
     "prettier": "prettier --write src/**/*.css .github/**/*.yml package.json .eslintrc index.html tsconfig.json README.md",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "gen": "plop",
-    "chromatic": "npx chromatic --project-token=aed9c78730a7"
+    "gen": "plop"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
