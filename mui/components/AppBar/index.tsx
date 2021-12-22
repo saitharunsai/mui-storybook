@@ -8,10 +8,9 @@ import Typography from '@mui/material/Typography'
 import React, { memo } from 'react'
 
 import { palette } from '../../../designToken'
-import type { AllPaletteColor } from '../../../designToken/types'
 
 type Props = {
-  barColor?: Partial<AllPaletteColor>
+  barColor?: string
 }
 
 const AppBar: React.FC<Props> = ({ barColor = palette.primary.main }) => {
