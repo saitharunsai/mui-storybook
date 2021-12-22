@@ -4,12 +4,10 @@ import { primary } from '../../../designToken'
 
 import AppBar from './index'
 
-const meta: ComponentMeta<typeof AppBar> = {
+export default {
   title: 'MUI/Components/AppBar',
   component: AppBar,
-}
-
-export default meta
+} as ComponentMeta<typeof AppBar>
 
 const Template: ComponentStory<typeof AppBar> = (props) => <AppBar {...props} />
 
