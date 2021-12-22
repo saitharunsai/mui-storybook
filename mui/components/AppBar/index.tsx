@@ -7,8 +7,8 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import React, { memo } from 'react'
 
-import type { AllPaletteColor } from '../../../designToken'
 import { palette } from '../../../designToken'
+import type { AllPaletteColor } from '../../../designToken/types'
 
 type Props = {
   barColor?: Partial<AllPaletteColor>

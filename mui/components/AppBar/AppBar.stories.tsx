@@ -1,16 +1,13 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import Renderer from '../../../.storybook/Renderer'
-import designToken from '../../../designToken/createTheme'
+import { primary } from '../../../designToken'
 
 import AppBar from './index'
 
 const meta: ComponentMeta<typeof AppBar> = {
   title: 'Components/AppBar',
   component: AppBar,
-  parameters: {
-    barColor: {},
-  },
 }
 
 export default meta
@@ -21,7 +18,20 @@ const Template: ComponentStory<typeof AppBar> = (props) => (
   </Renderer>
 )
 
-export const Primary = Template.bind({})
-Primary.args = {
-  barColor: designToken.palette.primary.light,
+export const Primary_Main = Template.bind({})
+Primary_Main.args = {
+  barColor: primary.main,
+}
+export const Primary_Light = Template.bind({})
+Primary_Light.args = {
+  barColor: primary.light,
+}
+export const Primary_Dark = Template.bind({})
+Primary_Dark.args = {
+  barColor: primary.dark,
+}
+
+export const Primary_ContrastText = Template.bind({})
+Primary_ContrastText.args = {
+  barColor: primary.contrastText,
 }

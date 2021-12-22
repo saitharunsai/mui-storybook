@@ -1,4 +1,7 @@
 #root {
-  height: 100%;
-  width: 100%;
+  max-height: 70%;
+  max-width: 70%;
+  height: 50%;
+  width: 60%;
+  margin-top: -50px;
 }

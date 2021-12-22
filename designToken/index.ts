@@ -1,6 +1,9 @@
-import type { Palette, PaletteColor, Theme } from '@mui/material/styles'
+import type { Theme } from '@mui/material/styles'
+import { createTheme as createDesignToken } from '@mui/material/styles'
 
-import origin from './createTheme'
+import { muiDefault } from './muiDefault'
+
+const theme: Theme = createDesignToken(muiDefault)
 
 export interface DesignToken {
   mixins: Theme['mixins']
@@ -13,13 +16,13 @@ export interface DesignToken {
 }
 
 const designToken: DesignToken = {
-  mixins: origin.mixins,
-  components: origin.components,
-  shadows: origin.shadows,
-  palette: origin.palette,
-  typography: origin.typography,
-  transitions: origin.transitions,
-  zIndex: origin.zIndex,
+  mixins: theme.mixins,
+  components: theme.components,
+  shadows: theme.shadows,
+  palette: theme.palette,
+  typography: theme.typography,
+  transitions: theme.transitions,
+  zIndex: theme.zIndex,
 }
 
 export default designToken
@@ -27,23 +30,15 @@ export default designToken
 export const mixin = designToken.mixins
 export const components = designToken.components
 export const shadow = designToken.shadows
-
-export const palette: Palette = designToken.palette
-export const primary: PaletteColor = palette.primary
-export const secondary: PaletteColor = palette.secondary
-export const error: PaletteColor = palette.error
-export const warning: PaletteColor = palette.warning
-export const info: PaletteColor = palette.info
-export const success: PaletteColor = palette.success
-
+export const palette = designToken.palette
 export const typography = designToken.typography
 export const transitions = designToken.transitions
 export const zIndex = designToken.zIndex
 
-export type AllPaletteColor =
-  | keyof typeof primary
-  | keyof typeof secondary
-  | keyof typeof error
-  | keyof typeof warning
-  | keyof typeof info
-  | keyof typeof success
+// palette selector
+export const primary = palette.primary
+export const secondary = palette.secondary
+export const error = palette.error
+export const warning = palette.warning
+export const info = palette.info
+export const success = palette.success
