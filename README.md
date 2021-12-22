@@ -1,14 +1,13 @@
-#  [![Typecheck](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/typecheck.yml) [![Test](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/test.yml) [![Build](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/build.yml) [![Lint](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/lint.yml) [![Depfu](https://badges.depfu.com/badges/6c7775918ccc8647160750e168617a65/overview.svg)](https://depfu.com/github/laststance/vite-redux-toolkit-starter?project_id=32682)
+#  [![Typecheck](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/typecheck.yml) [![Test](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/test.yml) [![Build](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/build.yml) [![Lint](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/lint.yml) [![Chromatic](https://github.com/laststance/mui-storybook-design-system/actions/workflows/chromatic.yml/badge.svg)](https://github.com/laststance/mui-storybook-design-system/actions/workflows/chromatic.yml) [![Depfu](https://badges.depfu.com/badges/6c7775918ccc8647160750e168617a65/overview.svg)](https://depfu.com/github/laststance/vite-redux-toolkit-starter?project_id=32682)
 
-This is the [Vite](https://vitejs.dev/) template for [Redux-toolkit](https://redux-toolkit.js.org/).  
-Extending some essential tools set up(ESLint, Jest, TypeScript etc) from [vite-react-ts-extended](https://github.com/laststance/vite-react-ts-extended)
+This is the [Vite](https://vitejs.dev/) template for [MUI](https://mui.com/) and [Storybook](https://storybook.js.org/).  
 
 All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
 
 # Installation
 
 ```
-npx degit laststance/vite-redux-toolkit-starter myapp
+npx degit laststance/mui-storybook-design-system myapp
 ```
 
 ```
