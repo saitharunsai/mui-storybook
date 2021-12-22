@@ -60,6 +60,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.5",
     "jest-watch-typeahead": "^1.0.0",
