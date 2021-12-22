@@ -7,24 +7,29 @@ import AppBar from './index'
 export default {
   title: 'MUI/Components/AppBar',
   component: AppBar,
+  argTypes: {
+    bgColor: {
+      description: 'Main color of AppBar',
+      defaultValue: primary.main,
+      options: [
+        primary.main,
+        primary.light,
+        primary.dark,
+        primary.contrastText,
+      ],
+      control: {
+        type: 'radio',
+        labels: {
+          [primary.main]: 'primary.main',
+          [primary.light]: 'primary.light',
+          [primary.dark]: 'primary.dark',
+          [primary.contrastText]: 'primary.contrastText',
+        },
+      },
+    },
+  },
 } as ComponentMeta<typeof AppBar>
 
-const Template: ComponentStory<typeof AppBar> = (props) => <AppBar {...props} />
-
-export const Primary_Main = Template.bind({})
-Primary_Main.args = {
-  barColor: primary.main,
-}
-export const Primary_Light = Template.bind({})
-Primary_Light.args = {
-  barColor: primary.light,
-}
-export const Primary_Dark = Template.bind({})
-Primary_Dark.args = {
-  barColor: primary.dark,
-}
-
-export const Primary_ContrastText = Template.bind({})
-Primary_ContrastText.args = {
-  barColor: primary.contrastText,
-}
+export const Default: ComponentStory<typeof AppBar> = (props) => (
+  <AppBar {...props} />
+)

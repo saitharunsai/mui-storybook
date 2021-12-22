@@ -7,11 +7,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider as ReduxProvider } from 'react-redux'
 
-import { muiDefault } from './../designToken/muiDefault'
+import { muiDefaultTheme } from '../designToken/muiDefaultTheme'
+
 import { store } from './app/store'
 import Routes from './Routes'
 
-const designToken = createDesignToken(muiDefault)
+const designToken = createDesignToken(muiDefaultTheme)
 
 ReactDOM.render(
   <React.StrictMode>

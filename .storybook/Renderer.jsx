@@ -6,9 +6,9 @@ import CssBaseline from '@mui/material/CssBaseline'
 
 import { createTheme as createDesignToken } from '@mui/material/styles'
 
-import { muiDefault } from './../designToken/muiDefault'
+import { muiDefaultTheme } from '../designToken/muiDefaultTheme'
 
-const designToken = createDesignToken(muiDefault)
+const designToken = createDesignToken(muiDefaultTheme)
 
 export const Renderer = (Story) =>
   (<ReduxProvider store={store}>

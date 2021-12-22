@@ -2,7 +2,6 @@ import './index.css'
 import Renderer from './Renderer'
 
 export const parameters = {
-  layout: 'centered',
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {

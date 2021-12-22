@@ -10,13 +10,13 @@ import React, { memo } from 'react'
 import { palette } from '../../../designToken'
 
 type Props = {
-  barColor?: string
+  bgColor?: string
 }
 
-const AppBar: React.FC<Props> = ({ barColor = palette.primary.main }) => {
+const AppBar: React.FC<Props> = ({ bgColor = palette.primary.main }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <MUIAppBar sx={{ bgcolor: barColor }} position="static">
+      <MUIAppBar sx={{ bgcolor: bgColor }} position="static">
         <Toolbar>
           <IconButton
             size="large"

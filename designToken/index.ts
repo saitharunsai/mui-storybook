@@ -1,9 +1,10 @@
 import type { Theme } from '@mui/material/styles'
 import { createTheme as createDesignToken } from '@mui/material/styles'
+export { useTheme as useDesignToken } from '@mui/material/styles'
 
-import { muiDefault } from './muiDefault'
+import { muiDefaultTheme } from './muiDefaultTheme'
 
-const theme: Theme = createDesignToken(muiDefault)
+const theme: Theme = createDesignToken(muiDefaultTheme)
 
 export interface DesignToken {
   mixins: Theme['mixins']
@@ -27,6 +28,7 @@ const designToken: DesignToken = {
 
 export default designToken
 
+// token selector
 export const mixin = designToken.mixins
 export const components = designToken.components
 export const shadow = designToken.shadows

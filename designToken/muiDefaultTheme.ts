@@ -1,6 +1,6 @@
 import type { ThemeOptions } from '@mui/material/styles/createTheme'
 
-export const muiDefault: ThemeOptions = {
+export const muiDefaultTheme: ThemeOptions = {
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     values: {
