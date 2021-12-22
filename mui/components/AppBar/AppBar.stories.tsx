@@ -1,6 +1,5 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import Renderer from '../../../.storybook/Renderer'
 import { primary } from '../../../designToken'
 
 import AppBar from './index'
@@ -12,11 +11,7 @@ const meta: ComponentMeta<typeof AppBar> = {
 
 export default meta
 
-const Template: ComponentStory<typeof AppBar> = (props) => (
-  <Renderer>
-    <AppBar {...props} />
-  </Renderer>
-)
+const Template: ComponentStory<typeof AppBar> = (props) => <AppBar {...props} />
 
 export const Primary_Main = Template.bind({})
 Primary_Main.args = {

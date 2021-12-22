@@ -16,23 +16,27 @@
     "gen": "plop"
   },
   "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.2.4",
     "@mui/material": "^5.2.5",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "@mui/system": "^5.2.5",
     "@reduxjs/toolkit": "^1.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
-    "react-router-dom": "^6.2.1"
+    "react-router-dom": "^6.2.1",
+    "styled-components": "^5.3.3"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
-    "@storybook/addon-actions": "^6.5.0-alpha.4",
-    "@storybook/addon-essentials": "^6.5.0-alpha.4",
-    "@storybook/addon-links": "^6.5.0-alpha.4",
-    "@storybook/react": "^6.5.0-alpha.4",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@storybook/theming": "^6.4.9",
     "@testing-library/dom": "^8.11.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^13.0.0-alpha.4",
@@ -65,7 +69,6 @@
     "prettier": "^2.5.1",
     "react-docgen-typescript": "^2.2.2",
     "storybook-builder-vite": "^0.1.11",
-    "storybook-dark-mode": "^1.0.8",
     "typescript": "^4.5.4",
     "vite": "^2.7.4",
     "whatwg-fetch": "^3.6.2"

@@ -1,8 +1,17 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@mui/styled-engine": [
+        "./node_modules/@mui/styled-engine-sc"
+      ]
+    },
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,5 +25,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["./src"]
+  "include": [
+    "./src"
+  ]
 }

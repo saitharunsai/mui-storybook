@@ -7,8 +7,7 @@ module.exports = {
   ],
   'addons': [
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    'storybook-dark-mode'
+    '@storybook/addon-essentials'
   ],
   'framework': '@storybook/react',
   'core': {
