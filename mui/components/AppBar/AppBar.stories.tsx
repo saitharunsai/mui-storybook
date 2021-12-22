@@ -5,7 +5,7 @@ import { primary } from '../../../designToken'
 import AppBar from './index'
 
 const meta: ComponentMeta<typeof AppBar> = {
-  title: 'Components/AppBar',
+  title: 'MUI/Components/AppBar',
   component: AppBar,
 }
 
