@@ -7,10 +7,17 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import React, { memo } from 'react'
 
-const AppBar: React.FC = () => {
+import type { AllPaletteColor } from '../../../designToken'
+import { palette } from '../../../designToken'
+
+type Props = {
+  barColor?: Partial<AllPaletteColor>
+}
+
+const AppBar: React.FC<Props> = ({ barColor = palette.primary.main }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <MUIAppBar position="static">
+      <MUIAppBar sx={{ bgcolor: barColor }} position="static">
         <Toolbar>
           <IconButton
             size="large"

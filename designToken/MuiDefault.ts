@@ -1,6 +1,6 @@
-import { createTheme } from '@mui/material/styles'
+import type { ThemeOptions } from '@mui/material/styles/createTheme'
 
-const theme = createTheme({
+export const muiDefault: ThemeOptions = {
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     values: {
@@ -267,6 +267,4 @@ const theme = createTheme({
     snackbar: 1400,
     tooltip: 1500,
   },
-})
-
-export default theme
+}
