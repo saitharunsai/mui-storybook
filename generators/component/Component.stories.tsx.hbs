@@ -2,15 +2,13 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import {{ properCase name }} from './{{ properCase name }}'
 
-const meta: Meta = {
+ export default meta {
   title: 'Components/{{ properCase name }}',
   component: {{ properCase name }},
   parameters: {
     controls: { expanded: true },
   },
-}
-
-export default meta
+} as ComponentMeta<typeof {{ properCase name }}>
 
 const Template: Story = (props) => <{{ properCase name }} {...props} >Hello</{{ properCase name }}>
 
