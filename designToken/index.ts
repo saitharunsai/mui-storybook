@@ -5,6 +5,7 @@ export { useTheme as useDesignToken } from '@mui/material/styles'
 import { muiDefaultTheme } from './muiDefaultTheme'
 import type {
   Common,
+  Error,
   Info,
   Primary,
   Secondary,

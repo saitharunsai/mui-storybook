@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography'
 import React, { memo } from 'react'
 
 import { palette } from '../../../designToken'
-import { ColorList } from '../../../designToken/types'
+import type { ColorList } from '../../../designToken/types'
 
 type Props = {
   bgColor?: ColorList
