@@ -8,9 +8,10 @@ import Typography from '@mui/material/Typography'
 import React, { memo } from 'react'
 
 import { palette } from '../../../designToken'
+import { ColorList } from '../../../designToken/types'
 
 type Props = {
-  bgColor?: string
+  bgColor?: ColorList
 }
 
 const AppBar: React.FC<Props> = ({ bgColor = palette.primary.main }) => {

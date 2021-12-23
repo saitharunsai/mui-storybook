@@ -3,6 +3,14 @@ import { createTheme as createDesignToken } from '@mui/material/styles'
 export { useTheme as useDesignToken } from '@mui/material/styles'
 
 import { muiDefaultTheme } from './muiDefaultTheme'
+import type {
+  Common,
+  Info,
+  Primary,
+  Secondary,
+  Success,
+  Warning,
+} from './types'
 
 const theme: Theme = createDesignToken(muiDefaultTheme)
 
@@ -10,7 +18,7 @@ export interface DesignToken {
   mixins: Theme['mixins']
   components?: Theme['components']
   shadows: Theme['shadows']
-  palette: Theme['palette']
+  palette: any
   typography: Theme['typography']
   transitions: Theme['transitions']
   zIndex: Theme['zIndex']
@@ -37,10 +45,11 @@ export const typography = designToken.typography
 export const transitions = designToken.transitions
 export const zIndex = designToken.zIndex
 
-// palette selector
-export const primary = palette.primary
-export const secondary = palette.secondary
-export const error = palette.error
-export const warning = palette.warning
-export const info = palette.info
-export const success = palette.success
+// main color palette selector
+export const common: Common = palette.common
+export const primary: Primary = palette.primary
+export const secondary: Secondary = palette.secondary
+export const error: Error = palette.error
+export const warning: Warning = palette.warning
+export const info: Info = palette.info
+export const success: Success = palette.success

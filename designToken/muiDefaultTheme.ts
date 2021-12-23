@@ -14,6 +14,7 @@ export const muiDefaultTheme: ThemeOptions = {
   },
   direction: 'ltr',
   components: {},
+
   palette: {
     mode: 'light',
     common: {
