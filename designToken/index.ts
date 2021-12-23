@@ -2,8 +2,6 @@ import type { Theme } from '@mui/material/styles'
 import { createTheme as createDesignToken } from '@mui/material/styles'
 
 export { useTheme as useDesignToken } from '@mui/material/styles'
-import colorList from './colorList'
-import labelList from './labelList'
 import { muiDefaultTheme } from './muiDefaultTheme'
 import type {
   Common,
@@ -57,8 +55,6 @@ export const error: Error = palette.error
 export const warning: Warning = palette.warning
 export const info: Info = palette.info
 export const success: Success = palette.success
-
-export { colorList, labelList }
 
 export type {
   Common,

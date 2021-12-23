@@ -42,4 +42,4 @@ mainPalettes.forEach(({ main, light, dark, contrastText }) => {
   colorList.push(contrastText)
 })
 
-export default colorList
+export { colorList }

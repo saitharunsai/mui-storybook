@@ -1,12 +1,15 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { primary, colorList, labelList } from '../../../designToken'
+import { primary } from '../../../designToken'
+import { colorList } from '../../../designToken/colorList'
+import { labelList } from '../../../designToken/labelList'
 
 import AppBar from './index'
 
 export default {
   title: 'MUI/Components/AppBar',
   component: AppBar,
+
   argTypes: {
     bgColor: {
       description: 'Main color of AppBar',

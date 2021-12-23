@@ -8,7 +8,7 @@ import {
   warning,
 } from './index'
 
-export default {
+export const labelList = {
   [common.white]: 'common.white',
   [common.black]: 'common.black',
   [primary.main]: 'primary.main',
