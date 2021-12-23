@@ -19,7 +19,7 @@ import {
   warning,
 } from './index'
 
-export const colorList: ColorList[] = []
+const colorList: ColorList[] = []
 
 function assertCast<T>(v: any): asserts v is T {}
 assertCast<Common>(common)
@@ -41,3 +41,5 @@ mainPalettes.forEach(({ main, light, dark, contrastText }) => {
   colorList.push(dark)
   colorList.push(contrastText)
 })
+
+export default colorList
