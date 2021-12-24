@@ -17,10 +17,10 @@ import type {
   Success,
   Warning,
 } from './types'
+import { assertCast } from './types'
 
-export const colorList: ColorList[] = []
+export let colorList: ColorList[] = []
 
-function assertCast<T>(v: any): asserts v is T {}
 assertCast<Common>(common)
 assertCast<Primary>(primary)
 assertCast<Secondary>(secondary)
@@ -29,14 +29,10 @@ assertCast<Info>(info)
 assertCast<Warning>(warning)
 assertCast<Success>(success)
 
-colorList.push(common.white)
-colorList.push(common.black)
+colorList = [common.white, common.black]
 
 const mainPalettes = [primary, secondary, error, info, warning, success]
 
 mainPalettes.forEach(({ main, light, dark, contrastText }) => {
-  colorList.push(main)
-  colorList.push(light)
-  colorList.push(dark)
-  colorList.push(contrastText)
+  colorList = [main, light, dark, contrastText, ...colorList]
 })
