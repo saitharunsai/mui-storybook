@@ -1,12 +1,12 @@
 import React, { memo } from 'react'
 
 import { primary } from '../designToken'
-import AppBar from '../mui/components/AppBar'
+import AppBar from '../mui/components/Surfaces/AppBar/AppBar'
 
 const App: React.FC = () => {
   return (
     <div>
-      <AppBar bgColor={primary.main} />
+      <AppBar color={primary.main} />
     </div>
   )
 }

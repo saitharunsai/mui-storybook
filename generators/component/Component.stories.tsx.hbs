@@ -2,15 +2,22 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import {{ properCase name }} from './{{ properCase name }}'
 
- export default meta {
-  title: 'Components/{{ properCase name }}',
+ export default {
+  title: 'MUI Default/{{ properCase folder }}/{{ properCase name }}',
   component: {{ properCase name }},
-  parameters: {
-    controls: { expanded: true },
+  argTypes: {
+    color: {
+      description: 'color for {{ properCase name }}',
+      options: colorList,
+      control: {
+        type: 'radio',
+        labels: labelList,
+      },
+    },
   },
-} as ComponentMeta<typeof {{ properCase name }}>
+} as ComponentMeta<TODO>
 
-const Template: Story = (props) => <{{ properCase name }} {...props} >Hello</{{ properCase name }}>
+const Template: ComponentStory<TODO> = (props) => <{{ properCase name }} {...props} >Hello</{{ properCase name }}>
 
 export const Default = Template.bind({})
 Default.args = {}

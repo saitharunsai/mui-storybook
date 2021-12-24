@@ -1,5 +1,5 @@
 import './index.css'
-import Renderer from './Renderer'
+import StorybookRenderer from './StorybookRenderer'
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -11,5 +11,5 @@ export const parameters = {
 }
 
 export const decorators = [
-  Renderer
+  StorybookRenderer
 ]
