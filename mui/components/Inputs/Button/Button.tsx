@@ -4,7 +4,7 @@ import React from 'react'
 const Button: React.FC = ({ children = 'Hello World' }) => {
   return (
     <>
-      <MuiButton children={children} />
+      <MuiButton>{children}</MuiButton>
     </>
   )
 }
