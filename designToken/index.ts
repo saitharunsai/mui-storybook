@@ -20,7 +20,7 @@ export interface DesignToken {
   mixins: Theme['mixins']
   components?: Theme['components']
   shadows: Theme['shadows']
-  palette: any
+  palette: TODO
   typography: Theme['typography']
   transitions: Theme['transitions']
   zIndex: Theme['zIndex']
