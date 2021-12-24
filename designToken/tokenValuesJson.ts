@@ -1,6 +1,6 @@
-import type { ThemeOptions } from '@mui/material/styles/createTheme'
+import type { DesignTokenOptions } from './types'
 
-export const muiDefaultTheme: ThemeOptions = {
+const tokenValuesJson: NonNullable<DesignTokenOptions & JsonObject> = {
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     values: {
@@ -269,3 +269,5 @@ export const muiDefaultTheme: ThemeOptions = {
     tooltip: 1500,
   },
 }
+
+export default tokenValuesJson

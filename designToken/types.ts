@@ -1,3 +1,26 @@
+import type { Theme } from '@mui/material/styles'
+import type { ThemeOptions } from '@mui/system'
+
+export function assertCast<T>(v: any): asserts v is T {}
+
+export interface DesignToken extends Theme {
+  palette: Override<Palette, Theme['palette']> // @TODO perfect overide withtin non-error extends
+  border?: TODO
+  padding?: TODO
+}
+
+export interface DesignTokenOptions extends ThemeOptions {
+  palette: TODO
+  border?: TODO
+  padding?: TODO
+}
+
+export type CreateDesignToken = (
+  options: DesignTokenOptions,
+  ...args: object[]
+) => DesignToken
+
+// generate concrete literal type with color code
 export type Common = {
   black: '#000'
   white: '#fff'
@@ -43,6 +66,16 @@ export type Success = {
   light: '#4caf50'
   dark: '#1b5e20'
   contrastText: '#fff'
+}
+
+export interface Palette {
+  common: Common
+  primary: Primary
+  secondary: Secondary
+  error: Error
+  warning: Warning
+  info: Info
+  success: Success
 }
 
 export type ColorList =

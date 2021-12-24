@@ -1,18 +1,12 @@
 import CssBaseline from '@mui/material/CssBaseline'
-import {
-  ThemeProvider as DesignTokenProvider,
-  createTheme as createDesignToken,
-} from '@mui/material/styles'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider as ReduxProvider } from 'react-redux'
 
-import { muiDefaultTheme } from '../designToken/muiDefaultTheme'
+import { DesignTokenProvider, designToken } from '../designToken'
 
 import { store } from './app/store'
 import Routes from './Routes'
-
-const designToken = createDesignToken(muiDefaultTheme)
 
 ReactDOM.render(
   <React.StrictMode>

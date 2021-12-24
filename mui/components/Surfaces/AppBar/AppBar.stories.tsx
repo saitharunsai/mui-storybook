@@ -1,7 +1,7 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { colorList } from '../../../../designToken/colorList'
-import { labelList } from '../../../../designToken/labelList'
+import { storybookDisplayNameList } from '../../../../designToken/storybookDisplayNameList'
 
 import AppBar from './AppBar'
 
@@ -15,7 +15,7 @@ export default {
       options: colorList,
       control: {
         type: 'radio',
-        labels: labelList,
+        labels: storybookDisplayNameList,
       },
     },
   },

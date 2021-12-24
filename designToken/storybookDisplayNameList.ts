@@ -6,9 +6,9 @@ import {
   secondary,
   success,
   warning,
-} from './index'
+} from './selector'
 
-export const labelList = {
+export const storybookDisplayNameList = {
   [common.white]: 'common.white',
   [common.black]: 'common.black',
   [primary.main]: 'primary.main',

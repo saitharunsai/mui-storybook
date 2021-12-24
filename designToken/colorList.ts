@@ -1,3 +1,12 @@
+import {
+  common,
+  error,
+  info,
+  primary,
+  secondary,
+  success,
+  warning,
+} from './selector'
 import type {
   ColorList,
   Common,
@@ -9,17 +18,7 @@ import type {
   Warning,
 } from './types'
 
-import {
-  common,
-  error,
-  info,
-  primary,
-  secondary,
-  success,
-  warning,
-} from './index'
-
-const colorList: ColorList[] = []
+export const colorList: ColorList[] = []
 
 function assertCast<T>(v: any): asserts v is T {}
 assertCast<Common>(common)
@@ -41,5 +40,3 @@ mainPalettes.forEach(({ main, light, dark, contrastText }) => {
   colorList.push(dark)
   colorList.push(contrastText)
 })
-
-export { colorList }
