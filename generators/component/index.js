@@ -20,8 +20,8 @@ module.exports = {
     },
     {
       type: 'add',
-      path: 'mui/components/{{folder}}/{{properCase name}}/{{properCase name}}.tsx',
-      templateFile: 'generators/component/Component.tsx.hbs',
+      path: 'mui/components/{{folder}}/{{properCase name}}/default.ts',
+      templateFile: 'generators/component/default.ts.hbs',
     },
     {
       type: 'add',

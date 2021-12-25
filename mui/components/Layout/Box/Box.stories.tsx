@@ -2,11 +2,11 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
 
-import Button from './default'
+import Box from './default'
 
 export default {
-  title: 'MUI Default/Inputs/Button',
-  component: Button,
+  title: 'MUI Default/Layout/Box',
+  component: Box,
   argTypes: {
     bgcolor: {
       description: 'bgcolor',
@@ -22,12 +22,7 @@ export default {
 const DefaultTemplate: ComponentStory<TODO> = ({
   children = 'Hello World',
   bgcolor = 'primary.main',
-}) => {
-  return (
-    <Button variant="contained" sx={{ bgcolor: bgcolor }}>
-      {children}
-    </Button>
-  )
-}
+}) => <Box sx={{ bgcolor: bgcolor }} children={children} />
+
 export const Default = DefaultTemplate.bind({})
 Default.args = {}

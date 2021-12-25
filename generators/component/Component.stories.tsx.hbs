@@ -1,16 +1,16 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
-import {{ properCase name }} from './{{ properCase name }}'
+import {{ properCase name }} from './default'
 
-import { colorList, paletteNameList } from '../../../../designToken'
+import { paletteNameList } from '../../../../designToken'
 
  export default {
   title: 'MUI Default/{{ properCase folder }}/{{ properCase name }}',
   component: {{ properCase name }},
   argTypes: {
-    color: {
-      description: 'color for {{ properCase name }}',
-      options: colorList,
+    bgcolor: {
+      description: 'bgcolor',
+      options: paletteNameList,
       control: {
         type: 'radio',
         labels: paletteNameList,
@@ -19,7 +19,7 @@ import { colorList, paletteNameList } from '../../../../designToken'
   },
 } as ComponentMeta<TODO>
 
-const Template: ComponentStory<TODO> = (props) => <{{ properCase name }} {...props}/>
+const DefaultTemplate: ComponentStory<TODO> = ({ children = 'Hello World', bgcolor = 'primary.main'}) => <{{ properCase name }} sx={ {bgcolor: bgcolor} } children={children} />
 
-export const Default = Template.bind({})
+export const Default = DefaultTemplate.bind({})
 Default.args = {}
