@@ -1,4 +1,3 @@
-export * from './colorList'
 export * from './storybookDisplayNameList'
 export * from './createDesignToken'
 export { default as createDesignToken } from './createDesignToken'

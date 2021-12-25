@@ -1,7 +1,7 @@
 import { Box } from '@mui/system'
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { colorList, storybookDisplayNameList } from '../../../../designToken'
+import { storybookDisplayNameList } from '../../../../designToken'
 
 import AppBar from './default'
 import DemoComponents from './Demo'
@@ -10,9 +10,9 @@ export default {
   title: 'MUI Default/Surfaces/App Bar',
   component: AppBar,
   argTypes: {
-    color: {
-      description: 'color',
-      options: colorList,
+    bgcolor: {
+      description: 'bgcolor',
+      options: storybookDisplayNameList,
       control: {
         type: 'radio',
         labels: storybookDisplayNameList,

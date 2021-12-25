@@ -4,26 +4,27 @@ import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
+import type { SystemCssProperties } from '@mui/system'
 import React from 'react'
 
-import type { ColorList } from '../../../../designToken'
+import type { DesignToken } from '../../../../designToken'
 
 import AppBar from './default'
 
 export type DemoProps = {
-  color?: ColorList
+  bgcolor?: SystemCssProperties<DesignToken>
   text?: string
   position?: TODO
   buttonComponent?: TODO
 }
 
 const Demo: React.FC<DemoProps> = ({
-  color = 'primary.main',
+  bgcolor = 'primary.main',
   text = 'MUI v5 Storybook Design System',
 }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar sx={{ bgcolor: color }} position="static">
+      <AppBar sx={{ bgcolor: bgcolor }} position="static">
         <Toolbar>
           <IconButton
             size="large"

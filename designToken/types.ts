@@ -1,102 +1,53 @@
+/* eslint-disable */
 import type { Theme } from '@mui/material/styles'
+import type { Components } from '@mui/material/styles/components'
+import type { Mixins } from '@mui/material/styles/createMixins'
+import type { Palette } from '@mui/material/styles/createPalette'
+import type { Transitions } from '@mui/material/styles/createTransitions'
+import type { Typography } from '@mui/material/styles/createTypography'
+import type { Shadows } from '@mui/material/styles/shadows'
+import type { ZIndex } from '@mui/material/styles/zIndex'
 import type { ThemeOptions } from '@mui/system'
-
+import type { BreakpointsOptions } from '@mui/system/createTheme/createBreakpoints'
+import type { SpacingOptions } from '@mui/system/createTheme/createSpacing'
+import type { Direction } from '@mui/system/createTheme/createTheme'
+import type { ShapeOptions } from '@mui/system/createTheme/shape'
+import { Shape } from '@mui/system/createTheme/shape'
+import { Breakpoints } from '@mui/system/createTheme/createBreakpoints'
+import { Spacing } from '@mui/system/createTheme/createSpacing'
+/* eslint-enable */
 export function assertCast<T>(v: any): asserts v is T {}
 
 export interface DesignToken extends Theme {
-  palette: Override<Palette, Theme['palette']> // @TODO perfect overide withtin non-error extends
+  shape: Shape
+  breakpoints: Breakpoints
+  direction: Direction
+  mixins: Mixins
+  spacing: Spacing
+  components?: Components
+  palette: Palette
+  shadows: Shadows
+  transitions: Transitions
+  typography: Typography
+  zIndex: ZIndex
+  unstable_strictMode?: boolean
 }
 
-export type DesignTokenOptions = ThemeOptions
+export interface DesignTokenOptions extends ThemeOptions {
+  shape?: ShapeOptions
+  breakpoints?: BreakpointsOptions
+  direction?: Direction
+  mixins?: unknown
+  palette?: Record<string, any>
+  shadows?: unknown
+  spacing?: SpacingOptions
+  transitions?: unknown
+  components?: Record<string, any>
+  typography?: unknown
+  zIndex?: Record<string, number>
+}
 
 export type CreateDesignToken = (
   options: DesignTokenOptions,
   ...args: object[]
 ) => DesignToken
-
-// generate concrete literal type with color code
-export type Common = {
-  black: '#000'
-  white: '#fff'
-}
-
-export type Primary = {
-  main: '#1976d2'
-  light: '#42a5f5'
-  dark: '#1565c0'
-  contrastText: '#fff'
-}
-
-export type Secondary = {
-  main: '#9c27b0'
-  light: '#ba68c8'
-  dark: '#7b1fa2'
-  contrastText: '#fff'
-}
-
-export type Error = {
-  main: '#d32f2f'
-  light: '#ef5350'
-  dark: '#c62828'
-  contrastText: '#fff'
-}
-
-export type Warning = {
-  main: '#ed6c02'
-  light: '#ff9800'
-  dark: '#e65100'
-  contrastText: '#fff'
-}
-
-export type Info = {
-  main: '#0288d1'
-  light: '#03a9f4'
-  dark: '#01579b'
-  contrastText: '#fff'
-}
-
-export type Success = {
-  main: '#2e7d32'
-  light: '#4caf50'
-  dark: '#1b5e20'
-  contrastText: '#fff'
-}
-
-export interface Palette {
-  mode: 'light' | 'dark'
-  common: Common
-  primary: Primary
-  secondary: Secondary
-  error: Error
-  warning: Warning
-  info: Info
-  success: Success
-}
-
-export type ColorList =
-  | Common['white']
-  | Common['black']
-  | Primary['main']
-  | Primary['light']
-  | Primary['dark']
-  | Primary['contrastText']
-  | Secondary['main']
-  | Secondary['light']
-  | Secondary['dark']
-  | Secondary['contrastText']
-  | Error['main']
-  | Error['light']
-  | Error['dark']
-  | Error['contrastText']
-  | Warning['main']
-  | Warning['light']
-  | Warning['dark']
-  | Warning['contrastText']
-  | Info['main']
-  | Info['light']
-  | Info['dark']
-  | Info['contrastText']
-  | Success['main']
-  | Success['light']
-  | Success['dark']
-  | Success['contrastText']
