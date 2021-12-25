@@ -2,6 +2,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import {{ properCase name }} from './{{ properCase name }}'
 
+import { colorList, storybookDisplayNameList } from '../../../../designToken'
+
  export default {
   title: 'MUI Default/{{ properCase folder }}/{{ properCase name }}',
   component: {{ properCase name }},
@@ -17,7 +19,7 @@ import {{ properCase name }} from './{{ properCase name }}'
   },
 } as ComponentMeta<TODO>
 
-const Template: ComponentStory<TODO> = (props) => <{{ properCase name }} {...props} >Hello</{{ properCase name }}>
+const Template: ComponentStory<TODO> = (props) => <{{ properCase name }} {...props}/>
 
 export const Default = Template.bind({})
 Default.args = {}

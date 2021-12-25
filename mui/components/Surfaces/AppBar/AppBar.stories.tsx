@@ -1,7 +1,6 @@
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { colorList } from '../../../../designToken/colorList'
-import { storybookDisplayNameList } from '../../../../designToken/storybookDisplayNameList'
+import { colorList, storybookDisplayNameList } from '../../../../designToken'
 
 import AppBar from './AppBar'
 
