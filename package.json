@@ -14,7 +14,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "gen": "plop",
-    "clean": "rimraf node_modules yarn.lock build-storybook.log storybook-static yarn-error.log dist"
+    "clean": "rimraf node_modules yarn.lock build-storybook.log storybook-static yarn-error.log dist",
+    "validate": "./scripts/validate"
   },
   "dependencies": {
     "@mui/icons-material": "^5.2.4",
