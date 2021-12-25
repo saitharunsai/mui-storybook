@@ -4,7 +4,7 @@ import type { ComponentStory, ComponentMeta } from '@storybook/react'
 import { colorList, storybookDisplayNameList } from '../../../../designToken'
 
 import AppBar from './default'
-import DemoComponents from './demo'
+import DemoComponents from './Demo'
 
 export default {
   title: 'MUI Default/Surfaces/App Bar',

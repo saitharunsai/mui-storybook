@@ -14,7 +14,7 @@ const tokenValuesJson: NonNullable<DesignTokenOptions & JsonObject> = {
   },
   direction: 'ltr',
   components: {},
-
+  spacing: 8,
   palette: {
     mode: 'light',
     common: {

@@ -5,15 +5,9 @@ export function assertCast<T>(v: any): asserts v is T {}
 
 export interface DesignToken extends Theme {
   palette: Override<Palette, Theme['palette']> // @TODO perfect overide withtin non-error extends
-  border?: TODO
-  padding?: TODO
 }
 
-export interface DesignTokenOptions extends ThemeOptions {
-  palette: TODO
-  border?: TODO
-  padding?: TODO
-}
+export type DesignTokenOptions = ThemeOptions
 
 export type CreateDesignToken = (
   options: DesignTokenOptions,
@@ -69,6 +63,7 @@ export type Success = {
 }
 
 export interface Palette {
+  mode: 'light' | 'dark'
   common: Common
   primary: Primary
   secondary: Secondary

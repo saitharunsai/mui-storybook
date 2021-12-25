@@ -6,7 +6,6 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import React from 'react'
 
-import { palette } from '../../../../designToken'
 import type { ColorList } from '../../../../designToken'
 
 import AppBar from './default'
@@ -19,7 +18,7 @@ export type DemoProps = {
 }
 
 const Demo: React.FC<DemoProps> = ({
-  color = palette.primary.main,
+  color = 'primary.main',
   text = 'MUI v5 Storybook Design System',
 }) => {
   return (
