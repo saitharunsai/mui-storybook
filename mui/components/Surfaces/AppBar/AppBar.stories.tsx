@@ -1,7 +1,7 @@
 import { Box } from '@mui/system'
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { storybookDisplayNameList } from '../../../../designToken'
+import { paletteNameList } from '../../../../designToken'
 
 import AppBar from './default'
 import DemoComponents from './Demo'
@@ -12,10 +12,10 @@ export default {
   argTypes: {
     bgcolor: {
       description: 'bgcolor',
-      options: storybookDisplayNameList,
+      options: paletteNameList,
       control: {
         type: 'radio',
-        labels: storybookDisplayNameList,
+        labels: paletteNameList,
       },
     },
   },
@@ -39,7 +39,7 @@ export const Demo = DemoTemplate.bind({})
 //     options: colorList,
 //     control: {
 //       type: 'radio',
-//       labels: storybookDisplayNameList,
+//       labels: paletteNameList,
 //     },
 //   },
 // }

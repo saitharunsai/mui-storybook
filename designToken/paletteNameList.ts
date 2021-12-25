@@ -8,7 +8,7 @@ import {
   warning,
 } from './selector'
 
-export const storybookDisplayNameList = {
+export const paletteNameList = {
   [common.white]: 'common.white',
   [common.black]: 'common.black',
   [primary.main]: 'primary.main',

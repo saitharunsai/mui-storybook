@@ -3,8 +3,9 @@
 npx concurrently \
   --kill-others-on-fail \
   --prefix "[{name}]" \
-  --names "test,typecheck,lint:fix" \
+  --names "test,lint:fix,typecheck,build" \
   --prefix-colors "bgRed.bold.white,bgGreen.bold.white,bgBlue.bold.white,bgMagenta.bold.white" \
-    "yarn test --watch=false" \
-    "yarn typecheck" \
-    "yarn lint:fix"
+    "npm run test --silent -- --watch=false" \
+    "npm run lint:fix --silent" \
+    "npm run typecheck --silent" \
+    "npm run build --silent"

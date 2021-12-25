@@ -1,4 +1,4 @@
-export * from './storybookDisplayNameList'
+export * from './paletteNameList'
 export * from './createDesignToken'
 export { default as createDesignToken } from './createDesignToken'
 export * from './selector'

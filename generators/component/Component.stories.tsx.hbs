@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import {{ properCase name }} from './{{ properCase name }}'
 
-import { colorList, storybookDisplayNameList } from '../../../../designToken'
+import { colorList, paletteNameList } from '../../../../designToken'
 
  export default {
   title: 'MUI Default/{{ properCase folder }}/{{ properCase name }}',
@@ -13,7 +13,7 @@ import { colorList, storybookDisplayNameList } from '../../../../designToken'
       options: colorList,
       control: {
         type: 'radio',
-        labels: storybookDisplayNameList,
+        labels: paletteNameList,
       },
     },
   },
