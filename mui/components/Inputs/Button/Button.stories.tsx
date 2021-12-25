@@ -1,13 +1,14 @@
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
-import Button from './Button'
+import Button from './default'
 
 export default {
   title: 'MUI Default/Inputs/Button',
   component: Button,
 } as ComponentMeta<any>
 
-const Template: ComponentStory<any> = (props) => <Button {...props} />
-
-export const Default = Template.bind({})
+const DefaultTemplate: ComponentStory<any> = ({ children = 'Hello World' }) => {
+  return <Button>{children}</Button>
+}
+export const Default = DefaultTemplate.bind({})
 Default.args = {}
