@@ -1,5 +1,4 @@
 import MenuIcon from '@mui/icons-material/Menu'
-import MUIAppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
@@ -10,20 +9,22 @@ import React from 'react'
 import { palette } from '../../../../designToken'
 import type { ColorList } from '../../../../designToken'
 
-type AppBarProps = {
+import AppBar from './default'
+
+export type DemoProps = {
   color?: ColorList
   text?: string
   position?: TODO
   buttonComponent?: TODO
 }
 
-const AppBar: React.FC<AppBarProps> = ({
+const Demo: React.FC<DemoProps> = ({
   color = palette.primary.main,
   text = 'MUI v5 Storybook Design System',
 }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <MUIAppBar sx={{ bgcolor: color }} position="static">
+      <AppBar sx={{ bgcolor: color }} position="static">
         <Toolbar>
           <IconButton
             size="large"
@@ -39,9 +40,9 @@ const AppBar: React.FC<AppBarProps> = ({
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
-      </MUIAppBar>
+      </AppBar>
     </Box>
   )
 }
 
-export default AppBar
+export default Demo

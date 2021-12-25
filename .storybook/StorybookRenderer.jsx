@@ -1,4 +1,4 @@
-import AppBar from '../mui/components/Surfaces/AppBar/AppBar'
+import Demo from '../mui/components/Surfaces/AppBar/demo'
 import { store } from '../src/app/store'
 import { Provider as ReduxProvider } from 'react-redux'
 import CssBaseline from '@mui/material/CssBaseline'
