@@ -1,11 +1,11 @@
-import Button from '@mui/material/Button'
+import Switch from '@mui/material/Switch'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
 
 export default {
-  title: 'MUI Default/Inputs/Button',
-  component: Button,
+  title: 'MUI Default/Inputs/Switch',
+  component: Switch,
   argTypes: {
     bgcolor: {
       description: 'bgcolor',
@@ -18,13 +18,9 @@ export default {
   },
 } as ComponentMeta<TODO>
 
-export const DefaultTemplate: ComponentStory<TODO> = ({
-  children = 'Hello World',
+const DefaultTemplate: ComponentStory<TODO> = ({
   bgcolor = 'primary.main',
-}) => {
-  return (
-    <Button variant="contained" sx={{ bgcolor: bgcolor }}>
-      {children}
-    </Button>
-  )
-}
+}) => <Switch sx={{ bgcolor: bgcolor }} />
+
+export const Default = DefaultTemplate.bind({})
+Default.args = {}

@@ -1,11 +1,11 @@
-import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
 
 export default {
-  title: 'MUI Default/Inputs/Button',
-  component: Button,
+  title: 'MUI Default/Inputs/TextField',
+  component: TextField,
   argTypes: {
     bgcolor: {
       description: 'bgcolor',
@@ -18,13 +18,10 @@ export default {
   },
 } as ComponentMeta<TODO>
 
-export const DefaultTemplate: ComponentStory<TODO> = ({
+const DefaultTemplate: ComponentStory<TODO> = ({
   children = 'Hello World',
   bgcolor = 'primary.main',
-}) => {
-  return (
-    <Button variant="contained" sx={{ bgcolor: bgcolor }}>
-      {children}
-    </Button>
-  )
-}
+}) => <TextField sx={{ bgcolor: bgcolor }} children={children} />
+
+export const Default = DefaultTemplate.bind({})
+Default.args = {}

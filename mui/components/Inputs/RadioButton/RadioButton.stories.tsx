@@ -1,11 +1,13 @@
-import Button from '@mui/material/Button'
+import Radio from '@mui/material/Radio'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
 
+import RadioButtonsGroupComponents from './RadioButtonsGroup'
+
 export default {
-  title: 'MUI Default/Inputs/Button',
-  component: Button,
+  title: 'MUI Default/Inputs/RadioButton',
+  component: Radio,
   argTypes: {
     bgcolor: {
       description: 'bgcolor',
@@ -18,13 +20,6 @@ export default {
   },
 } as ComponentMeta<TODO>
 
-export const DefaultTemplate: ComponentStory<TODO> = ({
-  children = 'Hello World',
-  bgcolor = 'primary.main',
-}) => {
-  return (
-    <Button variant="contained" sx={{ bgcolor: bgcolor }}>
-      {children}
-    </Button>
-  )
-}
+export const RadioButtonsGroup: ComponentStory<TODO> = () => (
+  <RadioButtonsGroupComponents />
+)
