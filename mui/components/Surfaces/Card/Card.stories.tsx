@@ -1,8 +1,7 @@
+import Card from '@mui/material/Card'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Card from './default'
 
 export default {
   title: 'MUI Default/Surfaces/Card',

@@ -1,8 +1,7 @@
+import Badge from '@mui/material/Badge'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Badge from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Badge',

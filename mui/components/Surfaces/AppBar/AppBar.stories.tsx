@@ -1,9 +1,9 @@
+import AppBar from '@mui/material/AppBar'
 import { Box } from '@mui/system'
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
 
-import AppBar from './default'
 import DemoComponents from './Demo'
 
 export default {

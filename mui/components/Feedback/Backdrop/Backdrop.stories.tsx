@@ -1,8 +1,7 @@
+import Backdrop from '@mui/material/Backdrop'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Backdrop from './default'
 
 export default {
   title: 'MUI Default/Feedback/Backdrop',

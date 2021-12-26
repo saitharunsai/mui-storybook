@@ -1,8 +1,7 @@
+import Divider from '@mui/material/Divider'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Divider from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Divider',

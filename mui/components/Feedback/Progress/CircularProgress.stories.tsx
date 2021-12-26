@@ -1,8 +1,7 @@
+import CircularProgress from '@mui/material/CircularProgress'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import CircularProgress from './default'
 
 export default {
   title: 'MUI Default/Feedback/Progress',

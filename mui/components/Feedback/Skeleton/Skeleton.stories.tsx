@@ -1,8 +1,7 @@
+import Skeleton from '@mui/material/Skeleton'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Skeleton from './default'
 
 export default {
   title: 'MUI Default/Feedback/Skeleton',

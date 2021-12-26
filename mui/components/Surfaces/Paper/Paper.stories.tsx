@@ -1,8 +1,7 @@
+import Paper from '@mui/material/Paper'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Paper from './default'
 
 export default {
   title: 'MUI Default/Surfaces/Paper',

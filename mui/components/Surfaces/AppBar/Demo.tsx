@@ -1,4 +1,5 @@
 import MenuIcon from '@mui/icons-material/Menu'
+import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
@@ -8,8 +9,6 @@ import type { SystemCssProperties } from '@mui/system'
 import React from 'react'
 
 import type { DesignToken } from '../../../../designToken'
-
-import AppBar from './default'
 
 export type DemoProps = {
   bgcolor?: SystemCssProperties<DesignToken>

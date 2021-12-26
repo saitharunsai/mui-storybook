@@ -1,8 +1,7 @@
+import Tooltip from '@mui/material/Tooltip'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Tooltip from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Tooltip',

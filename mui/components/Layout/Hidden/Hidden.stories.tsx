@@ -1,6 +1,5 @@
+import Hidden from '@mui/material/Hidden'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
-
-import Hidden from './default'
 
 export default {
   title: 'MUI Default/Layout/Hidden',

@@ -1,8 +1,7 @@
+import Grid from '@mui/material/Grid'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Grid from './default'
 
 export default {
   title: 'MUI Default/Layout/Grid',

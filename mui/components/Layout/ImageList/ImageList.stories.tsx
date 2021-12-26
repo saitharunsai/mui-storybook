@@ -1,8 +1,7 @@
+import ImageList from '@mui/material/ImageList'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import ImageList from './default'
 
 export default {
   title: 'MUI Default/Layout/ImageList',

@@ -1,8 +1,7 @@
+import Avatar from '@mui/material/Avatar'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Avatar from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Avatar',

@@ -1,8 +1,7 @@
+import Chip from '@mui/material/Chip'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Chip from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Chip',

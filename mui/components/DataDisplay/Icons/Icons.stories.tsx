@@ -1,8 +1,7 @@
+import { Accessibility } from '@mui/icons-material'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import { Accessibility } from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Icons',

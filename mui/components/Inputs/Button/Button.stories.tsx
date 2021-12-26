@@ -1,8 +1,7 @@
+import Button from '@mui/material/Button'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Button from './default'
 
 export default {
   title: 'MUI Default/Inputs/Button',

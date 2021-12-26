@@ -1,8 +1,7 @@
+import Table from '@mui/material/Table'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Table from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Table',

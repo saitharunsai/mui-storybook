@@ -1,8 +1,7 @@
+import Stack from '@mui/material/Stack'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Stack from './default'
 
 export default {
   title: 'MUI Default/Layout/Stack',

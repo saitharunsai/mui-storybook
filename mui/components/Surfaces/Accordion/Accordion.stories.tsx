@@ -1,8 +1,7 @@
+import Accordion from '@mui/material/Accordion'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Accordion from './default'
 
 export default {
   title: 'MUI Default/Surfaces/Accordion',

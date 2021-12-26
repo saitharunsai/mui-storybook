@@ -1,8 +1,7 @@
+import Snackbar from '@mui/material/Snackbar'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Snackbar from './default'
 
 export default {
   title: 'MUI Default/Feedback/Snackbar',

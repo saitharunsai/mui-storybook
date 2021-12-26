@@ -1,8 +1,7 @@
+import Typography from '@mui/material/Typography'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Typography from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/Typography',

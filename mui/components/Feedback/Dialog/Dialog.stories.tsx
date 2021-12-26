@@ -1,8 +1,7 @@
+import Dialog from '@mui/material/Dialog'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Dialog from './default'
 
 export default {
   title: 'MUI Default/Feedback/Dialog',

@@ -1,8 +1,7 @@
+import Alert from '@mui/material/Alert'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Alert from './default'
 
 export default {
   title: 'MUI Default/Feedback/Alert',

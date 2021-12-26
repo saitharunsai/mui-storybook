@@ -1,8 +1,7 @@
+import List from '@mui/material/List'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import List from './default'
 
 export default {
   title: 'MUI Default/DataDisplay/List',

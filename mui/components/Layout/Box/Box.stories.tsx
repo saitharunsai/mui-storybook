@@ -1,8 +1,7 @@
+import Box from '@mui/material/Box'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
 import { paletteNameList } from '../../../../designToken'
-
-import Box from './default'
 
 export default {
   title: 'MUI Default/Layout/Box',
