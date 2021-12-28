@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Widget } from './features/counter/Widget'
+import { Widget } from './gadgets/counter/Widget'
 
 function Counter() {
   return (
@@ -12,7 +12,7 @@ function Counter() {
       <span>
         <span>Learn </span>
         <a
-          className="App-link"
+          className="Index-link"
           href="https://reactjs.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -21,7 +21,7 @@ function Counter() {
         </a>
         <span>, </span>
         <a
-          className="App-link"
+          className="Index-link"
           href="https://redux.js.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +30,7 @@ function Counter() {
         </a>
         <span>, </span>
         <a
-          className="App-link"
+          className="Index-link"
           href="https://redux-toolkit.js.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -39,7 +39,7 @@ function Counter() {
         </a>
         ,<span> and </span>
         <a
-          className="App-link"
+          className="Index-link"
           href="https://react-redux.js.org/"
           target="_blank"
           rel="noopener noreferrer"

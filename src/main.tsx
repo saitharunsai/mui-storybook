@@ -2,6 +2,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider as ReduxProvider } from 'react-redux'
+import './index.css'
 
 import { DesignTokenProvider, designToken } from '../designToken'
 

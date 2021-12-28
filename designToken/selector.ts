@@ -5,6 +5,7 @@ export const spacing = designToken.spacing
 export const mixin = designToken.mixins
 export const components = designToken.components
 export const shadow = designToken.shadows
+export const breakpoints = designToken.breakpoints
 export const palette = designToken.palette
 export const typography = designToken.typography
 export const transitions = designToken.transitions

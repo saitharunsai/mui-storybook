@@ -1,8 +1,8 @@
 /* eslint-disable */
-import type { Theme } from '@mui/material/styles'
+import type { PaletteColor, Theme } from '@mui/material/styles'
 import type { Components } from '@mui/material/styles/components'
 import type { Mixins } from '@mui/material/styles/createMixins'
-import type { Palette } from '@mui/material/styles/createPalette'
+import type { Palette as DefaultPalette } from '@mui/material/styles/createPalette'
 import type { Transitions } from '@mui/material/styles/createTransitions'
 import type { Typography } from '@mui/material/styles/createTypography'
 import type { Shadows } from '@mui/material/styles/shadows'
@@ -15,8 +15,32 @@ import type { ShapeOptions } from '@mui/system/createTheme/shape'
 import { Shape } from '@mui/system/createTheme/shape'
 import { Breakpoints } from '@mui/system/createTheme/createBreakpoints'
 import { Spacing } from '@mui/system/createTheme/createSpacing'
+import { Color } from '@mui/material'
 /* eslint-enable */
 export function assertCast<T>(v: any): asserts v is T {}
+
+// https://mui.com/customization/color/#color-palette
+export interface Palette extends DefaultPalette {
+  tertiary: PaletteColor
+  red: Color
+  pink: Color
+  purple: Color
+  deepPurple: Color
+  indigo: Color
+  blue: Color
+  lightBlue: Color
+  cyan: Color
+  teal: Color
+  green: Color
+  lightGreen: Color
+  lime: Color
+  yellow: Color
+  amber: Color
+  orange: Color
+  deepOrange: Color
+  brown: Color
+  blueGrey: Color
+}
 
 export interface DesignToken extends Theme {
   shape: Shape

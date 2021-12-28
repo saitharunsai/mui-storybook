@@ -1,6 +1,6 @@
 import type { DesignTokenOptions } from './types'
 
-const tokenValuesJson: NonNullable<DesignTokenOptions & JsonObject> = {
+const tokenJson: NonNullable<DesignTokenOptions & JsonObject> = {
   breakpoints: {
     keys: ['xs', 'sm', 'md', 'lg', 'xl'],
     values: {
@@ -13,7 +13,13 @@ const tokenValuesJson: NonNullable<DesignTokenOptions & JsonObject> = {
     unit: 'px',
   },
   direction: 'ltr',
-  components: {},
+  components: {
+    MuiCard: {
+      defaultProps: {
+        elevation: 0,
+      },
+    },
+  },
   spacing: 8,
   palette: {
     mode: 'light',
@@ -31,6 +37,12 @@ const tokenValuesJson: NonNullable<DesignTokenOptions & JsonObject> = {
       main: '#9c27b0',
       light: '#ba68c8',
       dark: '#7b1fa2',
+      contrastText: '#fff',
+    },
+    tertiary: {
+      main: '#2e7d32',
+      light: '#4caf50',
+      dark: '#1b5e20',
       contrastText: '#fff',
     },
     error: {
@@ -270,4 +282,4 @@ const tokenValuesJson: NonNullable<DesignTokenOptions & JsonObject> = {
   },
 }
 
-export default tokenValuesJson
+export default tokenJson
