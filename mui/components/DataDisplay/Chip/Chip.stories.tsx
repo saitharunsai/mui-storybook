@@ -1,27 +1,44 @@
 import Chip from '@mui/material/Chip'
 import type { ComponentMeta, ComponentStory } from '@storybook/react'
 
-import { paletteNameList } from '../../../../designToken'
+import { mainColorList } from '../../../../designToken'
 
 export default {
   title: 'MUI Default/DataDisplay/Chip',
   component: Chip,
   argTypes: {
-    bgcolor: {
-      description: 'bgcolor',
-      options: paletteNameList,
+    color: {
+      description: 'color',
+      options: mainColorList,
       control: {
         type: 'radio',
-        labels: paletteNameList,
+        labels: mainColorList,
+      },
+    },
+    size: {
+      options: ['small', 'medium'],
+      control: {
+        type: 'radio',
+        labels: ['small', 'medium'],
+      },
+    },
+    variant: {
+      options: ['filled', 'outlined'],
+      control: {
+        type: 'radio',
+        labels: ['filled', 'outlined'],
       },
     },
   },
 } as ComponentMeta<TODO>
 
-const DefaultTemplate: ComponentStory<TODO> = ({
-  children = 'Hello World',
-  bgcolor = 'primary.main',
-}) => <Chip sx={{ bgcolor: bgcolor }} children={children} />
+const DefaultTemplate: ComponentStory<TODO> = (props) => <Chip {...props} />
 
 export const Default = DefaultTemplate.bind({})
-Default.args = {}
+Default.args = {
+  label: 'Shop',
+  clickable: true,
+  disabled: false,
+  size: 'medium',
+  variant: 'filled',
+}
