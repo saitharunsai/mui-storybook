@@ -22,6 +22,7 @@ export function assertCast<T>(v: any): asserts v is T {}
 // https://mui.com/customization/color/#color-palette
 export interface Palette extends DefaultPalette {
   tertiary: PaletteColor
+  oneOff: Color
   red: Color
   pink: Color
   purple: Color
