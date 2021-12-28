@@ -10,6 +10,15 @@ This is the [Vite](https://vitejs.dev/) template for [MUI](https://mui.com/) and
 
 All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
 
+
+> # Why
+> As a React Developer, my personal opinion is that MUI is a complete design system with V5 implementation and documentation site.
+>
+>But people are crazy about Storybook!
+>
+>In addition, Storybook + Cromatic seems to be a viable option as a way to actually achieve an efficient workflow with designers.
+
+
 # Installation
 
 ```
