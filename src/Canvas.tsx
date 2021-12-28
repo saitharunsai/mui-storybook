@@ -6,7 +6,7 @@ import Container from '@mui/material/Container'
 import Text from '@mui/material/Typography'
 import React from 'react'
 
-import { sx } from './styled'
+import { sx } from './Canvas.style'
 
 const Canvas: React.FC = () => {
   return (
