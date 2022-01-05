@@ -34,7 +34,7 @@
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@mui/icons-material": "^5.2.4",
-    "@mui/material": "^5.2.5",
+    "@mui/material": "^5.2.7",
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "@mui/system": "^5.2.5",
     "@storybook/addon-a11y": "^6.5.0-alpha.5",
