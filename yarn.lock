@@ -2669,20 +2669,6 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@mui/system@^5.2.5":
-  version "5.2.6"
-  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.2.6.tgz#153b534223caae254a98162eef06d6ab48ecff34"
-  integrity sha512-PZ7bmpWOLikWgqn2zWv9/Xa7lxnRBOmfjoMH7c/IVYJs78W3971brXJ3xV9MEWWQcoqiYQeXzUJaNf4rFbKCBA==
-  dependencies:
-    "@babel/runtime" "^7.16.3"
-    "@mui/private-theming" "^5.2.3"
-    "@mui/styled-engine" "^5.2.6"
-    "@mui/types" "^7.1.0"
-    "@mui/utils" "^5.2.3"
-    clsx "^1.1.1"
-    csstype "^3.0.10"
-    prop-types "^15.7.2"
-
 "@mui/system@^5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.2.8.tgz#c8a7adff69b50fea8ec9cb20a1f5bdab33c247f5"
