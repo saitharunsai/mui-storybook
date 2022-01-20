@@ -3,6 +3,7 @@ import { CssBaseline } from '@mui/material'
 import { DesignTokenProvider, designToken } from '../src/designToken'
 
 export const parameters = {
+  viewMode: 'docs',
   // automatically create action args for all props that start with "on"
   actions: { argTypesRegex: '^on.*' },
   dependencies: {
@@ -12,7 +13,7 @@ export const parameters = {
 
     // completely hide a dependency/dependents block if it has no elements
     // by default this is false
-    hideEmpty: true
+    hideEmpty: true,
   }
 }
 
