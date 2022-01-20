@@ -10,14 +10,14 @@ import { sx } from './styled'
 export interface Props {
   header?: string
   title?: string
-  description?: string
+  description?: 'any' | 'many' | 'semver'
   size?: '500' | '1500' | '2000'
 }
 
 export const ItemCard: React.FC<Props> = ({
   header = 'header',
+  description,
   title = 'title',
-  description = 'descriotion',
   size = '1500',
 }) => {
   return (
@@ -30,7 +30,7 @@ export const ItemCard: React.FC<Props> = ({
         <Text variant="body2" color="text.secondary" sx={{ height: 32 }}>
           {size}ml
         </Text>
-        <Text variant="body2">{description}</Text>
+        <Text variant="body2">{description ? description : 'none'}</Text>
       </CardContent>
       <CardActions
         sx={{

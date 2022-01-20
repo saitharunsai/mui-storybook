@@ -2,7 +2,7 @@ import { ButtonUnstyled } from '@mui/material'
 import React from 'react'
 
 export default {
-  title: 'ButtonUnstyled',
+  title: 'Components/ButtonUnstyled',
   component: ButtonUnstyled,
 }
 

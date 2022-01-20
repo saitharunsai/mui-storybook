@@ -4,7 +4,7 @@ import React from 'react'
 import { ItemCard } from './ItemCard'
 
 export default {
-  title: 'Production/reusable/ItemCard',
+  title: 'example',
   component: ItemCard,
 } as ComponentMeta<typeof ItemCard>
 
