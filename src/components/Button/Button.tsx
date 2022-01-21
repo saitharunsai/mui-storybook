@@ -1,5 +1,5 @@
 /* eslint-disable */
-import Original from '@mui/material/Button'
+import MUIButton from '@mui/material/Button'
 import type {
   ButtonPropsColorOverrides,
   ButtonPropsSizeOverrides,
@@ -92,7 +92,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ children = 'Button', ...props }) => {
-  return <Original {...props}>{children}</Original>
+  return <MUIButton {...props}>{children}</MUIButton>
 }
 
 export default Button
