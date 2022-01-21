@@ -2006,7 +2006,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-a11y@^6.5.0-alpha.5":
+"@storybook/addon-a11y@^6.5.0-alpha.22":
   version "6.5.0-alpha.22"
   resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.0-alpha.22.tgz#1f094440691f514b81837b19dfa5eddef9e5ed4c"
   integrity sha512-c1pFV4AfgVaYPPDeY0W1d+gmRZVkq9O8S1ACzage3Zd4nsTpklEJpyJF098Jyf0iSpj6l7jqVF4cRP7MDudT/w==
@@ -2028,7 +2028,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-actions@6.5.0-alpha.22", "@storybook/addon-actions@^6.5.0-alpha.5":
+"@storybook/addon-actions@6.5.0-alpha.22", "@storybook/addon-actions@^6.5.0-alpha.22":
   version "6.5.0-alpha.22"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.5.0-alpha.22.tgz#8ac0669345394743d8902e7622fd739e0668e0ce"
   integrity sha512-9QB6oHSnHqabicLrjSR+06Rp0O+VaUutAZOx70z1hfaUCL1gcikWfAEWOwK/OU6mnHVkeflHbu57nQ6kPWwq/Q==
@@ -2089,7 +2089,7 @@
     lodash "^4.17.21"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-docs@6.5.0-alpha.22", "@storybook/addon-docs@^6.5.0-alpha.5":
+"@storybook/addon-docs@6.5.0-alpha.22", "@storybook/addon-docs@^6.5.0-alpha.22":
   version "6.5.0-alpha.22"
   resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-6.5.0-alpha.22.tgz#3403fc517c0118b47e45bad0760998aa6a75713c"
   integrity sha512-HNjNibWuWGQqozu9SJIT8LtlFwiCB+YgFK8ziK23ydAVSpXGbIK5eMb2bnMRFiZISg7OkcqLdbJUOHSVRP3x6g==
@@ -2141,7 +2141,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-essentials@^6.5.0-alpha.5":
+"@storybook/addon-essentials@^6.5.0-alpha.22":
   version "6.5.0-alpha.22"
   resolved "https://registry.yarnpkg.com/@storybook/addon-essentials/-/addon-essentials-6.5.0-alpha.22.tgz#ce4ff1d681b1398a1b9c19a2dbabd66f67ccd271"
   integrity sha512-GMC7ps00QgYO4Lvp1ODQdOu7pwbFxtG6UeYPml8nLR4Crir9ZggTbJUFi/lPnzcb4KkhzHHIa65vQ3rySUr0lw==
@@ -2191,7 +2191,7 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-storysource@^6.5.0-alpha.5":
+"@storybook/addon-storysource@^6.5.0-alpha.22":
   version "6.5.0-alpha.22"
   resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-6.5.0-alpha.22.tgz#42029a2364d75e4980ce12839de5a0ee1ad6e2f2"
   integrity sha512-puvZz2JiHFKdv7T/raRwdajiDQSbGa/9//wLKNKxtUIi1aRDqdgkyBRVnZI/ask5y09ujgkZxUwXLTpPsgNwdw==
@@ -2818,7 +2818,7 @@
     react-docgen-typescript "^2.1.1"
     tslib "^2.0.0"
 
-"@storybook/react@^6.5.0-alpha.5":
+"@storybook/react@^6.5.0-alpha.22":
   version "6.5.0-alpha.22"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.5.0-alpha.22.tgz#c2e4026d3417bc589b9e2cc2c7df1ee31fcb98d5"
   integrity sha512-IxjC9wD52Y8dLbGVcni640vvmbbPQfxlcEuSPAOa+3NIITmAIjDMNrxPigKjyDHOxr2UN4FrC6xj+h9Nq1HigA==
@@ -2962,7 +2962,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
-"@storybook/theming@6.5.0-alpha.22", "@storybook/theming@^6.5.0-alpha.5":
+"@storybook/theming@6.5.0-alpha.22", "@storybook/theming@^6.5.0-alpha.22":
   version "6.5.0-alpha.22"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.5.0-alpha.22.tgz#8d238607bcb81ff8fd45babbd46ecf6bb5b63823"
   integrity sha512-1qRdsaAIbYpq9VmM1MxltFJf4slUna8Ng3IflDjs/apl3i0NEZRVFgI3cW3M5hMbOg5qM4FfqUimoczpYhco1Q==
