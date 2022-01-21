@@ -1,3 +1,4 @@
+/* eslint-disable */
 import type {
   InternalStandardProps as StandardProps,
   Theme,
@@ -12,6 +13,7 @@ import type { SwitchClasses } from '@mui/material/Switch/switchClasses'
 import type { SxProps } from '@mui/system'
 import type { OverridableStringUnion } from '@mui/types'
 import React from 'react'
+/* eslint-enable */
 
 interface SwitchProps
   extends StandardProps<SwitchBaseProps, 'checkedIcon' | 'color' | 'icon'> {
