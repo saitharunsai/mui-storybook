@@ -34,8 +34,6 @@
     }
   },
   "rules": {
-    "no-alert": "error",
-    "no-console": "error",
     "react-hooks/rules-of-hooks": "error",
     "prettier/prettier": [
       "warn",
