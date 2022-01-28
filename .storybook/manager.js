@@ -1,7 +1,7 @@
 import { addons } from '@storybook/addons'
 import { themes } from '@storybook/theming'
-import muiTheme from './MuiTheme';
+import muiBrandTheme from './MuiBrandTheme';
 
 addons.setConfig({
-  theme: muiTheme
+  theme: muiBrandTheme
 })

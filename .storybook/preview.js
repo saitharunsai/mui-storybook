@@ -2,12 +2,12 @@ import React from 'react'
 import { CssBaseline } from '@mui/material'
 import { DesignTokenProvider, designToken } from '../src/designToken'
 import { themes } from '@storybook/theming'
-import muiTheme from './MuiTheme'
+import muiBrandTheme from './MuiBrandTheme'
 
 export const parameters = {
   viewMode: 'docs',
   docs: {
-    theme: muiTheme
+    theme: muiBrandTheme
   },
   backgrounds: {
     default: 'light',
