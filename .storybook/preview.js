@@ -2,12 +2,36 @@ import React from 'react'
 import { CssBaseline } from '@mui/material'
 import { DesignTokenProvider, designToken } from '../src/designToken'
 import { themes } from '@storybook/theming'
-import muiTheme from './MuiTheme';
+import muiTheme from './MuiTheme'
 
 export const parameters = {
   viewMode: 'docs',
   docs: {
     theme: muiTheme
+  },
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: '#fff'
+      },
+      {
+        name: 'dark',
+        value: 'rgb(10, 25, 41)'
+      },
+      {
+        name: 'twitter',
+        value: '#00aced'
+      },
+      {
+        name: 'facebook',
+        value: '#3b5998'
+      }
+    ],
+    grid: {
+      disable: true
+    }
   },
   // automatically create action args for all props that start with "on"
   actions: { argTypesRegex: '^on.*' },

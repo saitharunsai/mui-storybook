@@ -6,7 +6,7 @@ export default create({
   base: 'dark',
 
   colorPrimary: '#3399FF',
-  colorSecondary: 'deepskyblue',
+  colorSecondary: 'rgb(0, 76, 153)',
 
   // UI
   appBg: '#001E3C',
@@ -23,17 +23,17 @@ export default create({
   textInverseColor: '#B2BAC2',
 
   // Toolbar default and active colors
-  barTextColor: 'silver',
+  barTextColor: '#fff',
   barSelectedColor: 'rgb(0, 30, 60)',
   barBg: 'rgb(0, 127, 255)',
 
   // Form colors
-  inputBg: 'rgb(10, 25, 41)',
-  inputBorder: 'silver',
-  inputTextColor: 'black',
-  inputBorderRadius: 4,
+  inputBg: 'rgb(0, 30, 60)',
+  inputBorder: 'rgb(102, 178, 255)',
+  inputTextColor: 'rgb(102, 178, 255)',
+  inputBorderRadius: 10,
 
-  brandTitle: 'My custom storybook',
-  brandUrl: 'https://example.com',
-  brandImage: 'https://place-hold.it/350x150'
+  brandTitle: 'MUI Storybook',
+  brandUrl: 'https://mui.com/',
+  brandImage: 'https://pbs.twimg.com/media/E_aj11YVcA4uZOT?format=jpg'
 })
