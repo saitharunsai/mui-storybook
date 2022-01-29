@@ -10,12 +10,7 @@ import type { OverridableStringUnion } from '@mui/types'
 import React from 'react'
 
 // @ts-ignore Interface 'CircularProgressProps' incorrectly extends interface 'Omit<HTMLAttributes<HTMLSpanElement>, "classes"> & StyledComponentProps<"children"> & { className?: string; ref?: Ref<...>; style?: CSSProperties; }'.
-export interface CircularProgressProps
-  extends StandardProps<React.HTMLAttributes<HTMLSpanElement>, 'children'> {
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: Partial<CircularProgressClasses>
+export interface CircularProgressProps {
   /**
    * The color of the component. It supports those theme colors that make sense for this component.
    * @default 'primary'
@@ -42,11 +37,7 @@ export interface CircularProgressProps
    * If using a string, you need to provide the CSS unit, e.g '3rem'.
    * @default 40
    */
-  size?: number | string
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx?: SxProps<Theme>
+  size?: number
   /**
    * The thickness of the circle.
    * @default 3.6
