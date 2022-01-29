@@ -2,18 +2,13 @@
   "name": "mui-storybook-design-system",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "any/index.js",
-  "files": [
-    "anyscript"
-  ],
   "scripts": {
+    "start": "start-storybook -p 6006",
+    "build": "build-storybook",
     "clean": "rimraf dist node_modules yarn.lock",
     "format": "prettier --write \"**/*.+(json|yml|css|md|mdx)\"",
     "lint": "eslint . --ext .ts,.tsx,.js,jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx --fix",
-    "release": "dotenv yarn build & yarn typescript:generate && auto shipit",
-    "storybook": "start-storybook -p 6006",
-    "build": "build-storybook",
     "sb:upgrade": "sb upgrade --prerelease",
     "test": "jest",
     "gen": "plop",
@@ -55,15 +50,12 @@
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "all-contributors-cli": "^6.20.0",
-    "auto": "^9.50.1",
     "chromatic": "^5.0.0",
-    "dotenv-cli": "^3.1.0",
     "esbuild": "^0.14.13",
     "esbuild-jest": "^0.5.0",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-typescript": "^3.0.0",
-    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
@@ -89,15 +81,5 @@
   "peerDependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
-  },
-  "engines": {
-    "node": ">=14",
-    "npm": ">=6"
-  },
-  "auto": {
-    "plugins": [
-      "npm",
-      "released"
-    ]
   }
 }
