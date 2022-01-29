@@ -6,7 +6,7 @@ export default create({
   base: 'dark',
 
   colorPrimary: 'rgb(51 153 255)',
-  colorSecondary: 'rgb(0, 76, 153)',
+  colorSecondary: 'rgb(51 153 255)',
 
   // UI
   appBg: 'rgb(0, 30, 60)',
@@ -20,7 +20,7 @@ export default create({
 
   // Text colors
   textColor: '#fff',
-  textInverseColor: 'rgb(178 186 194)',
+  textInverseColor: '#fff',
 
   // Toolbar default and active colors
   barTextColor: '#fff',
@@ -30,7 +30,7 @@ export default create({
   // Form colors
   inputBg: 'rgb(0, 30, 60)',
   inputBorder: 'rgb(102, 178, 255)',
-  inputTextColor: '#fff',
+  inputTextColor: 'rgb(102, 178, 255)',
   inputBorderRadius: 10,
 
   brandTitle: 'MUI Storybook',
