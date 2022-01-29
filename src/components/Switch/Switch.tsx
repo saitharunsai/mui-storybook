@@ -1,67 +1,47 @@
-/* eslint-disable */
-import type {
-  InternalStandardProps as StandardProps,
-  Theme,
-} from '@mui/material'
-import type { SwitchBaseProps } from '@mui/material/internal/SwitchBase'
 import MUISwitch from '@mui/material/Switch'
-import type {
-  SwitchPropsColorOverrides,
-  SwitchPropsSizeOverrides,
-} from '@mui/material/Switch/Switch'
-import type { SwitchClasses } from '@mui/material/Switch/switchClasses'
-import type { SxProps } from '@mui/system'
-import type { OverridableStringUnion } from '@mui/types'
 import React from 'react'
-/* eslint-enable */
 
-interface SwitchProps
-  extends StandardProps<SwitchBaseProps, 'checkedIcon' | 'color' | 'icon'> {
-  /**
-   * The icon to display when the component is checked.
-   */
-  checkedIcon?: React.ReactNode
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: Partial<SwitchClasses>
+interface SwitchProps {
   /**
    * The color of the component. It supports those theme colors that make sense for this component.
    * @default 'primary'
    */
-  color?: OverridableStringUnion<
+  color?:
     | 'primary'
     | 'secondary'
     | 'error'
     | 'info'
     | 'success'
     | 'warning'
-    | 'default',
-    SwitchPropsColorOverrides
-  >
-  /**
-   * If `true`, the component is disabled.
-   */
-  disabled?: boolean
-  /**
-   * The icon to display when the component is unchecked.
-   */
-  icon?: React.ReactNode
+    | 'default'
   /**
    * The size of the component.
    * `small` is equivalent to the dense switch styling.
    * @default 'medium'
    */
-  size?: OverridableStringUnion<'small' | 'medium', SwitchPropsSizeOverrides>
+  size?: 'small' | 'medium'
   /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
+   * If `true`, the component is checked.
    */
-  sx?: SxProps<Theme>
+  checked?: boolean
   /**
-   * The value of the component. The DOM API casts this to a string.
-   * The browser uses "on" as the default value.
+   * The default checked state. Use when the component is not controlled.
    */
-  value?: unknown
+  defaultChecked?: boolean
+  /**
+   * If `true`, the ripple effect is disabled.
+   */
+  disableRipple?: boolean
+  /**
+   * If `true`, the ripples are centered.
+   * They won't start at the cursor interaction position.
+   * @default false
+   */
+  centerRipple?: boolean
+  /**
+   * If `true`, the component is disabled.
+   */
+  disabled?: boolean
 }
 
 const Switch: React.FC<SwitchProps> = (props) => {
