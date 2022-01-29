@@ -5,13 +5,13 @@ import { create } from '@storybook/theming'
 export default create({
   base: 'dark',
 
-  colorPrimary: '#3399FF',
+  colorPrimary: 'rgb(51 153 255)',
   colorSecondary: 'rgb(0, 76, 153)',
 
   // UI
-  appBg: '#001E3C',
-  appContentBg: '#0A1929',
-  appBorderColor: 'rgba(194, 224, 255, 0.08)',
+  appBg: 'rgb(0, 30, 60)',
+  appContentBg: 'rgb(10, 25, 41)',
+  appBorderColor: 'rgb(19, 47, 76)',
   appBorderRadius: 10,
 
   // Typography
@@ -20,12 +20,12 @@ export default create({
 
   // Text colors
   textColor: '#fff',
-  textInverseColor: '#B2BAC2',
+  textInverseColor: 'rgb(178 186 194)',
 
   // Toolbar default and active colors
   barTextColor: '#fff',
   barSelectedColor: 'rgb(0, 30, 60)',
-  barBg: 'rgb(0, 127, 255)',
+  barBg: 'rgb(51 153 255)',
 
   // Form colors
   inputBg: 'rgb(0, 30, 60)',
