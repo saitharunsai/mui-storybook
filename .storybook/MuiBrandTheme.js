@@ -30,7 +30,7 @@ export default create({
   // Form colors
   inputBg: 'rgb(0, 30, 60)',
   inputBorder: 'rgb(102, 178, 255)',
-  inputTextColor: 'rgb(102, 178, 255)',
+  inputTextColor: '#fff',
   inputBorderRadius: 10,
 
   brandTitle: 'MUI Storybook',
