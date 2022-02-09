@@ -1,4 +1,4 @@
-import { ButtonUnstyled } from '@mui/material'
+import ButtonUnstyled from '@mui/base/ButtonUnstyled'
 import React from 'react'
 
 export default {
