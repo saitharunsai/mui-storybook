@@ -1101,6 +1101,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.17.0":
+  version "7.17.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
+  integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.12.7", "@babel/template@^7.16.7", "@babel/template@^7.3.3":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.16.7.tgz#8d126c8701fde4d66b264b3eba3d96f07666d155"
@@ -1617,12 +1624,12 @@
     prop-types "^15.7.2"
     react-is "^17.0.2"
 
-"@mui/icons-material@^5.3.1":
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.3.1.tgz#e0e0aecce5a86971dbaa46441d931a9c749a1c53"
-  integrity sha512-8zBWCaE8DHjIGZhGgMod92p6Rm38EhXrS+cZtaV0+jOTMeWh7z+mvswXzb/rVKc0ZYqw6mQYBcn2uEs2yclI9w==
+"@mui/icons-material@^5.4.1":
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.4.1.tgz#20901e9a09154355b7a832180a90717938c675c4"
+  integrity sha512-koiq9q2GfjXRUWcC5fEi1b+EA4vfJHgIaAdBHlkOrBx2cnmmazQcyib501eodPfaZGx9BikrhivODaNQYQq8hA==
   dependencies:
-    "@babel/runtime" "^7.16.7"
+    "@babel/runtime" "^7.17.0"
 
 "@mui/material@^5.4.0":
   version "5.4.0"
@@ -1656,20 +1663,6 @@
   resolved "https://registry.yarnpkg.com/@mui/styled-engine-sc/-/styled-engine-sc-5.3.0.tgz#4e63e1d2b1a74ea5b422f8b1e12140d8f9356ce9"
   integrity sha512-dASXl3Xn56tGtDBJC61G4dxsfkkgYaVsqEBqNfmi3NxUjXT7Tlz/wr4FVFJARZ7Fef0NYWNE8sb+exfGecjXyA==
   dependencies:
-    prop-types "^15.7.2"
-
-"@mui/system@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.3.0.tgz#cd2c5fd7631f2c90f0072c866015bb24e319b66e"
-  integrity sha512-mblz3EObrhhIMPwSEe2Az7MbMaXOFgrvItPOzZwcY5O9qERB7Rr8KQgbU8VouWLUqyV2i8BaFpLrkKPA6eX2Aw==
-  dependencies:
-    "@babel/runtime" "^7.16.7"
-    "@mui/private-theming" "^5.3.0"
-    "@mui/styled-engine" "^5.3.0"
-    "@mui/types" "^7.1.0"
-    "@mui/utils" "^5.3.0"
-    clsx "^1.1.1"
-    csstype "^3.0.10"
     prop-types "^15.7.2"
 
 "@mui/system@^5.4.0":
