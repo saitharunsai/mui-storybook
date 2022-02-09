@@ -47,7 +47,9 @@ export const Clickable = () => {
 
   return (
     <Stack direction="row" spacing={1}>
+      {/* @ts-ignore */}
       <Chip label="Clickable" onClick={handleClick} />
+      {/* @ts-ignore */}
       <Chip label="Clickable" variant="outlined" onClick={handleClick} />
     </Stack>
   )
@@ -60,7 +62,9 @@ export function Deletable() {
 
   return (
     <Stack direction="row" spacing={1}>
+      {/* @ts-ignore */}
       <Chip label="Deletable" onDelete={handleDelete} />
+      {/* @ts-ignore */}
       <Chip label="Deletable" variant="outlined" onDelete={handleDelete} />
     </Stack>
   )
@@ -79,12 +83,14 @@ export function ClickableAndDeletable() {
     <Stack direction="row" spacing={1}>
       <Chip
         label="Clickable Deletable"
+        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
       />
       <Chip
         label="Clickable Deletable"
         variant="outlined"
+        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
       />
@@ -122,12 +128,14 @@ export function CustomDeleteIcon() {
     <Stack direction="row" spacing={1}>
       <Chip
         label="Custom delete icon"
+        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
         deleteIcon={<DoneIcon />}
       />
       <Chip
         label="Custom delete icon"
+        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
         deleteIcon={<DeleteIcon />}
@@ -187,6 +195,7 @@ export function ChipsArray() {
         return (
           <ListItem key={data.key}>
             <Chip
+              /* @ts-ignore */
               icon={icon}
               label={data.label}
               onDelete={data.label === 'React' ? undefined : handleDelete(data)}

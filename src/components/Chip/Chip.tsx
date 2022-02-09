@@ -5,6 +5,7 @@ import { OverridableStringUnion } from '@mui/types'
 import { ChipPropsColorOverrides } from '@mui/material/Chip/Chip'
 import { ChipPropsSizeOverrides } from '@mui/material/Chip/Chip'
 import { ChipPropsVariantOverrides } from '@mui/material/Chip/Chip'
+import { HTMLAttributes } from 'react'
 /* eslint-enable */
 
 export interface ChipProps {
@@ -52,7 +53,10 @@ export interface ChipProps {
   >
 }
 
-const Chip: React.FC<ChipProps> = ({ label = 'Chip Filled', ...rest }) => {
+const Chip: React.FC<ChipProps> = ({
+  label = 'Chip Filled',
+  ...rest
+}) => {
   // @ts-ignore
   return <MUIChip label={label} {...rest} />
 }
