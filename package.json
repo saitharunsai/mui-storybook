@@ -39,7 +39,7 @@
     "@storybook/react": "^6.5.0-alpha.27",
     "@storybook/theming": "^6.5.0-alpha.27",
     "@testing-library/dom": "^8.11.2",
-    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^13.0.0-alpha.4",
     "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/user-event": "^13.5.0",
