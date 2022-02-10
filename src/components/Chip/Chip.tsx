@@ -53,10 +53,7 @@ export interface ChipProps {
   >
 }
 
-const Chip: React.FC<ChipProps> = ({
-  label = 'Chip Filled',
-  ...rest
-}) => {
+const Chip: React.FC<ChipProps> = ({ label = 'Chip Filled', ...rest }) => {
   // @ts-ignore
   return <MUIChip label={label} {...rest} />
 }

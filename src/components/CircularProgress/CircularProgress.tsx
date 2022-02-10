@@ -1,12 +1,4 @@
-import type {
-  StandardProps,
-  CircularProgressPropsColorOverrides,
-} from '@mui/material'
-import type { CircularProgressClasses } from '@mui/material/CircularProgress'
 import MUICircularProgress from '@mui/material/CircularProgress'
-import type { Theme } from '@mui/material/styles'
-import type { SxProps } from '@mui/system'
-import type { OverridableStringUnion } from '@mui/types'
 import React from 'react'
 
 // @ts-ignore Interface 'CircularProgressProps' incorrectly extends interface 'Omit<HTMLAttributes<HTMLSpanElement>, "classes"> & StyledComponentProps<"children"> & { className?: string; ref?: Ref<...>; style?: CSSProperties; }'.
@@ -15,16 +7,14 @@ export interface CircularProgressProps {
    * The color of the component. It supports those theme colors that make sense for this component.
    * @default 'primary'
    */
-  color?: OverridableStringUnion<
+  color?:
     | 'primary'
     | 'secondary'
     | 'error'
     | 'info'
     | 'success'
     | 'warning'
-    | 'inherit',
-    CircularProgressPropsColorOverrides
-  >
+    | 'inherit'
   /**
    * If `true`, the shrink animation is disabled.
    * This only works if variant is `indeterminate`.
