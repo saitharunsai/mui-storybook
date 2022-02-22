@@ -25,7 +25,7 @@
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.2",
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
-    "@mui/system": "^5.4.2",
+    "@mui/system": "^5.4.3",
     "@storybook/addon-actions": "^6.5.0-alpha.27",
     "@storybook/addon-essentials": "^6.5.0-alpha.27",
     "@storybook/addon-links": "^6.5.0-alpha.27",
