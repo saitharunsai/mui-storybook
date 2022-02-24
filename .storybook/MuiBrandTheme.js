@@ -24,7 +24,7 @@ export default create({
 
   // Toolbar default and active colors
   barTextColor: '#fff',
-  barSelectedColor: 'rgb(0, 30, 60)',
+  barSelectedColor: 'rgb(19, 47, 76)',
   barBg: 'rgb(51 153 255)',
 
   // Form colors
