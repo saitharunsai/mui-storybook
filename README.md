@@ -22,11 +22,11 @@ All npm package are keeping least release version powered by [Depfu](https://dep
 # Installation
 
 ```
-npx degit laststance/mui-storybook-design-system mui-storybook-design-system
+npx degit laststance/mui-storybook
 ```
 
 ```
-cd mui-storybook-design-system
+cd mui-storybook
 yarn install
 yarn storybook
 ```
@@ -34,7 +34,7 @@ yarn storybook
 or npm
 
 ```
-cd mui-storybook-design-system
+cd mui-storybook
 npm install
 npm run storybook
 ```
