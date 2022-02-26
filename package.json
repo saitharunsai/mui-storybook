@@ -13,7 +13,6 @@
     "test": "jest",
     "gen": "plop",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
-    "typescript:generate": "tsc --declaration --emitDeclarationOnly --outDir dist --declarationMap",
     "sort-package-json": "sort-package-json",
     "validate": "./scripts/validate"
   },
