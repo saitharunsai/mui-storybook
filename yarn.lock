@@ -1101,7 +1101,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.17.0":
+"@babel/runtime@^7.17.0", "@babel/runtime@^7.17.2":
   version "7.17.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
   integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
@@ -1611,7 +1611,16 @@
     "@mui/utils" "^5.4.2"
     prop-types "^15.7.2"
 
-"@mui/styled-engine@^5.4.2", "@mui/styled-engine@npm:@mui/styled-engine-sc@latest":
+"@mui/private-theming@^5.4.4":
+  version "5.4.4"
+  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.4.4.tgz#cc2b2d897888ce5d1c319adfa2c50c0063a649ab"
+  integrity sha512-V/gxttr6736yJoU9q+4xxXsa0K/w9Hn9pg99zsOHt7i/O904w2CX5NHh5WqDXtoUzVcayLF0RB17yr6l79CE+A==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@mui/utils" "^5.4.4"
+    prop-types "^15.7.2"
+
+"@mui/styled-engine@^5.4.2", "@mui/styled-engine@^5.4.4", "@mui/styled-engine@npm:@mui/styled-engine-sc@latest":
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/@mui/styled-engine-sc/-/styled-engine-sc-5.3.0.tgz#4e63e1d2b1a74ea5b422f8b1e12140d8f9356ce9"
   integrity sha512-dASXl3Xn56tGtDBJC61G4dxsfkkgYaVsqEBqNfmi3NxUjXT7Tlz/wr4FVFJARZ7Fef0NYWNE8sb+exfGecjXyA==
@@ -1632,6 +1641,20 @@
     csstype "^3.0.10"
     prop-types "^15.7.2"
 
+"@mui/system@^5.4.4":
+  version "5.4.4"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.4.4.tgz#cd5d3d35c75594abd88708e715b5e39a8874ff51"
+  integrity sha512-Zjbztq2o/VRuRRCWjG44juRrPKYLQMqtQpMHmMttGu5BnvK6PAPW3WOY0r1JCAwLhbd8Kug9nyhGQYKETjo+tQ==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@mui/private-theming" "^5.4.4"
+    "@mui/styled-engine" "^5.4.4"
+    "@mui/types" "^7.1.2"
+    "@mui/utils" "^5.4.4"
+    clsx "^1.1.1"
+    csstype "^3.0.10"
+    prop-types "^15.7.2"
+
 "@mui/types@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@mui/types/-/types-7.1.2.tgz#4f3678ae77a7a3efab73b6e040469cc6df2144ac"
@@ -1643,6 +1666,17 @@
   integrity sha512-646dBCC57MXTo/Gf3AnZSHRHznaTETQq5x7AWp5FRQ4jPeyT4WSs18cpJVwkV01cAHKh06pNQTIufIALIWCL5g==
   dependencies:
     "@babel/runtime" "^7.17.0"
+    "@types/prop-types" "^15.7.4"
+    "@types/react-is" "^16.7.1 || ^17.0.0"
+    prop-types "^15.7.2"
+    react-is "^17.0.2"
+
+"@mui/utils@^5.4.4":
+  version "5.4.4"
+  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.4.4.tgz#bd7dde4f48f60c02b6debf976bd74f3505b188fe"
+  integrity sha512-hfYIXEuhc2mXMGN5nUPis8beH6uE/zl3uMWJcyHX0/LN/+QxO9zhYuV6l8AsAaphHFyS/fBv0SW3Nid7jw5hKQ==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
     "@types/prop-types" "^15.7.4"
     "@types/react-is" "^16.7.1 || ^17.0.0"
     prop-types "^15.7.2"
