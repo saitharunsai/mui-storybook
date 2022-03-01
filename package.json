@@ -22,7 +22,7 @@
   "dependencies": {},
   "devDependencies": {
     "@mui/icons-material": "^5.4.2",
-    "@mui/material": "^5.4.3",
+    "@mui/material": "^5.4.4",
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "@mui/system": "^5.4.4",
     "@storybook/addon-actions": "^6.5.0-alpha.41",
