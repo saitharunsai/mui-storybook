@@ -9,6 +9,11 @@ export const parameters = {
   docs: {
     theme: muiBrandTheme
   },
+  options: {
+    storySort: {
+      order: ['Default']
+    }
+  },
   backgrounds: {
     default: 'light',
     values: [
