@@ -32,33 +32,28 @@
 All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
 
 
-> # Why
-> As a React Developer, my personal opinion is that MUI is a complete design system with V5 implementation and documentation site.
->
->But people are crazy about Storybook!
->
->In addition, Storybook + Cromatic seems to be a viable option as a way to actually achieve an efficient workflow with designers.
+# Why
 
 
 # Installation
 
-```
-npx degit laststance/mui-storybook
-```
+Copy and paste following `refs` field to your `.storybook/main.js` file.
 
-```
-cd mui-storybook
-yarn install
-yarn storybook
-```
+```js
+// .storybook/main.js
 
-or npm
+module.exports={
+  refs: {
+    'mui-storybook': {
+      title: "MUI Storybook",
+      url: "https://61c23f8c33dad8003adc12f6-cwovkuxnql.chromatic.com/",
+    }
+  },
+}
+```
+And then start storybook like `yarn storybook` `npm run storybook`, you'll see the mui-storybook in the your storybook.  
 
-```
-cd mui-storybook
-npm install
-npm run storybook
-```
+<img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/mui-storybook-install.png" alt="installation" />
 
 # License
 
