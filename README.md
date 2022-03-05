@@ -1,43 +1,65 @@
-> # Not Ready For Use Yet❗️
->
-> I plan to release a beta version at the end of 1Q 2022.
+<p align="center">
+  <a href="https://main--61c23f8c33dad8003adc12f6.chromatic.com" target="_blank">
+    <img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/mui-storybook.gif" alt="storybook gif" align="center" />
+    <h1 align="center">MUI Storybook</h1>
+  </a>
+</p>
 
-# MUI Storybook
+</br>
 
-[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg)](https://main--61c23f8c33dad8003adc12f6.chromatic.com) [![Typecheck](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/typecheck.yml) [![Test](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/test.yml) [![Build](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/build.yml) [![Lint](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/vite-redux-toolkit-starter/actions/workflows/lint.yml) [![Chromatic](https://github.com/laststance/mui-storybook-design-system/actions/workflows/chromatic.yml/badge.svg)](https://github.com/laststance/mui-storybook-design-system/actions/workflows/chromatic.yml) [![Depfu](https://badges.depfu.com/badges/6c7775918ccc8647160750e168617a65/overview.svg)](https://depfu.com/github/laststance/vite-redux-toolkit-starter?project_id=32682)
+<p align="center">
+  <a href="https://main--61c23f8c33dad8003adc12f6.chromatic.com">
+    <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg" alt="Storybook" />
+  </a>
+   <a href="https://github.com/laststance/mui-storybook/actions/workflows/chromatic.yml">
+    <img src="https://github.com/laststance/mui-storybook/actions/workflows/chromatic.yml/badge.svg" alt="chromatic" />
+  </a>
+  <a href="">
+    <img src="" alt="" />
+  </a>
+   <a href="">
+    <img src="" alt="" />
+  </a>
+  <a href="">
+    <img src="" alt="" />
+  </a>
+</p>
 
-This is the [Vite](https://vitejs.dev/) template for [MUI](https://mui.com/) and [Storybook](https://storybook.js.org/).
-
-All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
 
 
-> # Why
-> As a React Developer, my personal opinion is that MUI is a complete design system with V5 implementation and documentation site.
->
->But people are crazy about Storybook!
->
->In addition, Storybook + Cromatic seems to be a viable option as a way to actually achieve an efficient workflow with designers.
+This project is [Storybook](https://storybook.js.org/) for [MUI v5](https://mui.com/) default components.
 
+# [Progress](https://github.com/laststance/mui-storybook/issues/61)
+At the time this project progress is not completed.  
+There are many Components that have not yet been added to the Storybook, and the feature of switch between the default Light Theme and Dark Theme has not yet been implemented.  
+
+Please take a look [Progress](https://github.com/laststance/mui-storybook/issues/61) page to track current status, and contribution is really helpful. 😄
+
+# Why
+
+This project is being developed to support front-end teams that are MUI users and use Storybook in their workflow.  
+
+Although the official MUI documentation is far more useful as a reference, I started this project because I realized that some teams that using Storybook or Chromatic as part of their development process have a need to make the external UI libraries available to everyone in Storybook.
 
 # Installation
 
-```
-npx degit laststance/mui-storybook
-```
+Copy and paste following `refs` field into the your `.storybook/main.js` file.
 
-```
-cd mui-storybook
-yarn install
-yarn storybook
-```
+```js
+// .storybook/main.js
 
-or npm
+module.exports={
+  refs: {
+    'mui-storybook': {
+      title: "MUI Storybook",
+      url: "https://61c23f8c33dad8003adc12f6-cwovkuxnql.chromatic.com/",
+    }
+  },
+}
+```
+And then start storybook like `yarn storybook` `npm run storybook`, you'll see the mui-storybook in the your storybook.  
 
-```
-cd mui-storybook
-npm install
-npm run storybook
-```
+<img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/mui-storybook-install.png" alt="installation" />
 
 # License
 
