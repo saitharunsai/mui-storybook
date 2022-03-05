@@ -3,17 +3,17 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "storybook": "start-storybook -p 6006",
     "build": "build-storybook",
     "clean": "rimraf dist node_modules yarn.lock",
     "format": "prettier --write \"**/*.+(json|yml|css|md|mdx)\"",
+    "gen": "plop",
     "lint": "eslint . --ext .ts,.tsx,.js,jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx --fix",
     "sb:upgrade": "sb upgrade --prerelease",
-    "test": "jest",
-    "gen": "plop",
-    "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "sort-package-json": "sort-package-json",
+    "storybook": "start-storybook -p 6006",
+    "test": "jest",
+    "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "validate": "./scripts/validate"
   },
   "resolutions": {
@@ -25,10 +25,7 @@
     "@mui/material": "^5.4.4",
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "@mui/system": "^5.4.4",
-    "@storybook/addon-actions": "^6.5.0-alpha.45",
     "@storybook/addon-essentials": "^6.5.0-alpha.45",
-    "@storybook/addon-links": "^6.5.0-alpha.45",
-    "@storybook/addon-storysource": "^6.5.0-alpha.45",
     "@storybook/addons": "^6.5.0-alpha.45",
     "@storybook/builder-webpack5": "^6.5.0-alpha.45",
     "@storybook/core": "^6.5.0-alpha.45",
@@ -76,9 +73,5 @@
     "styled-components": "^5.3.3",
     "typescript": "^4.6.2",
     "whatwg-fetch": "^3.6.2"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
   }
 }
