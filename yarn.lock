@@ -6681,10 +6681,10 @@ eslint-plugin-react-hooks@^4.4.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.4.0.tgz#71c39e528764c848d8253e1aa2c7024ed505f6c4"
   integrity sha512-U3RVIfdzJaeKDQKEJbz5p3NW8/L80PCATJAfuojwbaEL+gBjfGdhUcGde+WGUW46Q5sr/NgxevsIiDtNXrvZaQ==
 
-eslint-plugin-storybook@^0.5.8:
-  version "0.5.8"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-0.5.8.tgz#2830cad780e20c2642874e79486f0c075d5ddf82"
-  integrity sha512-k67mXT9dOl0z8RFWL9SAQ38NaNst6BjCUDQudaDGjMJHrXncOfCSOz9ROGIVu//zVepZw8D3abdGn9OVvyJ3QA==
+eslint-plugin-storybook@^0.5.10:
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-0.5.10.tgz#2e408aa104683c48c6da462c0d98331d6ba63b75"
+  integrity sha512-tyXR7YmqIPC1nxRIgVDEyOPHub1F67nVT7OXxo8mNwB/uH0apRvrYkBpbiiLafmgBaiq8Yc31qyB+jj5nBzW7w==
   dependencies:
     "@storybook/csf" "^0.0.1"
     "@typescript-eslint/experimental-utils" "^5.3.0"
