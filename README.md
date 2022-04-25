@@ -61,6 +61,15 @@ And then start storybook like `yarn storybook` `npm run storybook`, you'll see t
 
 <img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/mui-storybook-install.png" alt="installation" />
 
+# Local Development
+
+```sh
+git clone https://github.com/laststance/mui-storybook.git
+cd mui-storybook
+yarn
+yarn storybook # launch Storybook dev mode
+```
+
 # License
 
 MIT
