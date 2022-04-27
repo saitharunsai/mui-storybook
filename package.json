@@ -47,7 +47,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.4.0",
     "eslint-plugin-storybook": "^0.5.11",
-    "plop": "^3.0.5",
+    "plop": "^3.0.6",
     "prettier": "^2.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
