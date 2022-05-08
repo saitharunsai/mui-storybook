@@ -70,10 +70,6 @@ yarn
 yarn storybook # launch Storybook dev mode
 ```
 
-# License
-
-MIT
-
 ## Contribute Guide
 
 0. Fork the repository and create your branch from main.
@@ -90,7 +86,14 @@ $ plop Paper
 ✨  Done in 0.81s.
 ```
 
+# License
+
+MIT
+
+
 ## Contributors ✨
+
+
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
