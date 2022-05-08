@@ -74,6 +74,22 @@ yarn storybook # launch Storybook dev mode
 
 MIT
 
+## Contribute Guide
+
+0. Fork the repository and create your branch from main.
+1. Run `yarn` in the repository root.
+2. Run `yarn srorybook`.
+3. Run `yarn gen <ComponentName>`
+4. Then you got scaffold like this
+```shell
+ryota.murakami@MacBook-Pro ~/l/mui-storybook (main)> yarn gen Paper
+yarn run v1.22.18
+$ plop Paper
+✔  ++ /src/components/Paper/Paper.tsx
+✔  ++ /src/components/Paper/Paper.stories.tsx
+✨  Done in 0.81s.
+```
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
