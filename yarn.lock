@@ -1387,7 +1387,16 @@
     "@mui/utils" "^5.6.1"
     prop-types "^15.7.2"
 
-"@mui/styled-engine@^5.6.1", "@mui/styled-engine@npm:@mui/styled-engine-sc@latest":
+"@mui/private-theming@^5.7.0":
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.7.0.tgz#d4e1b34154df1cbd8a01901c3e2dcdb785825468"
+  integrity sha512-r/6JAWAHV1IFASZnceJPe9QT/s12ia/okGbmCUO4MEPdsWcNKye1RVKSwVgLATaX3YwPxDljWguIQrM3R2gZNA==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@mui/utils" "^5.7.0"
+    prop-types "^15.8.1"
+
+"@mui/styled-engine@^5.6.1", "@mui/styled-engine@^5.7.0", "@mui/styled-engine@npm:@mui/styled-engine-sc@latest":
   version "5.6.1"
   resolved "https://registry.yarnpkg.com/@mui/styled-engine-sc/-/styled-engine-sc-5.6.1.tgz#d9505c005eeefa5c7d7ef9c03e63324db889ee09"
   integrity sha512-BMY5Pb8YgOxvvwg9s6mPeDgzha4244/KgRmHvTVPBmvqypbiLPApR6SNyYON+1/3kLHt3TpmxrlRY3jPiZF2QQ==
@@ -1408,6 +1417,20 @@
     csstype "^3.0.11"
     prop-types "^15.7.2"
 
+"@mui/system@^5.7.0":
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.7.0.tgz#b72da5e8acbd60860961e63f8f51d14902d18faf"
+  integrity sha512-M0vemfcfaRQzqLUmVRIsAVb0rx2ULHisHED6njoJqtjH58gbVb497mH+K1vI+Lh29fKR6Ki2mx3egxVi7mUn9w==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@mui/private-theming" "^5.7.0"
+    "@mui/styled-engine" "^5.7.0"
+    "@mui/types" "^7.1.3"
+    "@mui/utils" "^5.7.0"
+    clsx "^1.1.1"
+    csstype "^3.0.11"
+    prop-types "^15.8.1"
+
 "@mui/types@^7.1.3":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@mui/types/-/types-7.1.3.tgz#d7636f3046110bcccc63e6acfd100e2ad9ca712a"
@@ -1422,6 +1445,17 @@
     "@types/prop-types" "^15.7.4"
     "@types/react-is" "^16.7.1 || ^17.0.0"
     prop-types "^15.7.2"
+    react-is "^17.0.2"
+
+"@mui/utils@^5.7.0":
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.7.0.tgz#7e96df6b871f4d3da13f26a623d73ddf9a11b19c"
+  integrity sha512-uWpDIEXl7bWYkJwKQQ4Rdhc2dcotVETRYuLy29V6qLYZyAbs7AMKwDDz0XKy3RMNmU7S2R/jEeSb9xjXscQUHQ==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+    "@types/prop-types" "^15.7.5"
+    "@types/react-is" "^16.7.1 || ^17.0.0"
+    prop-types "^15.8.1"
     react-is "^17.0.2"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -2801,7 +2835,7 @@
   resolved "https://registry.yarnpkg.com/@types/pretty-hrtime/-/pretty-hrtime-1.0.1.tgz#72a26101dc567b0d68fd956cf42314556e42d601"
   integrity sha512-VjID5MJb1eGKthz2qUerWT8+R4b9N+CHvGCzg9fn4kWZgaF9AhdYikQio3R7wV8YY1NsQKPaCwKz1Yff+aHNUQ==
 
-"@types/prop-types@*", "@types/prop-types@^15.7.4":
+"@types/prop-types@*", "@types/prop-types@^15.7.4", "@types/prop-types@^15.7.5":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
@@ -10348,7 +10382,7 @@ prompts@^2.4.0:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.0.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.0.0, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
