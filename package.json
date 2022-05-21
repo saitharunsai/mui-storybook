@@ -52,7 +52,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "sb": "^6.4.16",
+    "sb": "^6.5.3",
     "sort-package-json": "^1.57.0",
     "styled-components": "^5.3.5",
     "typescript": "^4.6.4"
