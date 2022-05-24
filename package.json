@@ -23,7 +23,7 @@
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.1",
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
-    "@mui/system": "^5.8.0",
+    "@mui/system": "^5.8.1",
     "@storybook/addon-essentials": "^6.5.0-beta.6",
     "@storybook/addons": "^6.5.0-beta.6",
     "@storybook/builder-webpack5": "^6.5.0-beta.6",
