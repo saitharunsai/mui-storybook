@@ -11,8 +11,8 @@
   <a href="https://main--61c23f8c33dad8003adc12f6.chromatic.com">
     <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg" alt="Storybook" />
   </a>
-   <a href="https://github.com/laststance/mui-storybook/actions/workflows/chromatic.yml">
-    <img src="https://github.com/laststance/mui-storybook/actions/workflows/chromatic.yml/badge.svg" alt="chromatic" />
+   <a href="https://github.com/saitharunsai/mui-storybook/actions/workflows/chromatic.yml">
+    <img src="https://github.com/saitharunsai/mui-storybook/actions/workflows/chromatic.yml/badge.svg" alt="chromatic" />
   </a>
   <a href="">
     <img src="" alt="" />
@@ -25,19 +25,18 @@
   </a>
 </p>
 
-
-
 This project is [Storybook](https://storybook.js.org/) for [MUI v5](https://mui.com/) default components.
 
-# [Progress](https://github.com/laststance/mui-storybook/issues/61)
-At the time this project progress is not completed.  
-There are many Components that have not yet been added to the Storybook, and the feature of switch between the default Light Theme and Dark Theme has not yet been implemented.  
+# [Progress](https://github.com/saitharunsai/mui-storybook/issues/61)
 
-Please take a look [Progress](https://github.com/laststance/mui-storybook/issues/61) page to track current status, and contribution is really helpful. 😄
+At the time this project progress is not completed.  
+There are many Components that have not yet been added to the Storybook, and the feature of switch between the default Light Theme and Dark Theme has not yet been implemented.
+
+Please take a look [Progress](https://github.com/saitharunsai/mui-storybook/issues/61) page to track current status, and contribution is really helpful. 😄
 
 # Why
 
-This project is being developed to support front-end teams that are MUI users and use Storybook in their workflow.  
+This project is being developed to support front-end teams that are MUI users and use Storybook in their workflow.
 
 Although the official MUI documentation is far more useful as a reference, I started this project because I realized that some teams that using Storybook or Chromatic as part of their development process have a need to make the external UI libraries available to everyone in Storybook.
 
@@ -48,16 +47,17 @@ Copy and paste following `refs` field into the your `.storybook/main.js` file.
 ```js
 // .storybook/main.js
 
-module.exports={
+module.exports = {
   refs: {
     'mui-storybook': {
-      title: "MUI Storybook",
-      url: "https://61c23f8c33dad8003adc12f6-cwovkuxnql.chromatic.com/",
-    }
+      title: 'MUI Storybook',
+      url: 'https://61c23f8c33dad8003adc12f6-cwovkuxnql.chromatic.com/',
+    },
   },
 }
 ```
-And then start storybook like `yarn storybook` `npm run storybook`, you'll see the mui-storybook in the your storybook.  
+
+And then start storybook like `yarn storybook` `npm run storybook`, you'll see the mui-storybook in the your storybook.
 
 <img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/mui-storybook-install.png" alt="installation" />
 
@@ -77,6 +77,7 @@ yarn storybook # launch Storybook dev mode
 2. Run `yarn srorybook`.
 3. Run `yarn gen <ComponentName>`
 4. Then you got scaffold like this
+
 ```shell
 ryota.murakami@MacBook-Pro ~/l/mui-storybook (main)> yarn gen Paper
 yarn run v1.22.18
@@ -90,10 +91,7 @@ $ plop Paper
 
 MIT
 
-
 ## Contributors ✨
-
-
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
