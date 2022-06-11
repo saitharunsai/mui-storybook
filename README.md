@@ -64,7 +64,7 @@ And then start storybook like `yarn storybook` `npm run storybook`, you'll see t
 # Local Development
 
 ```sh
-git clone https://github.com/laststance/mui-storybook.git
+git clone https://github.com/saitharunsai/mui-storybook.git
 cd mui-storybook
 yarn
 yarn storybook # launch Storybook dev mode
@@ -74,12 +74,12 @@ yarn storybook # launch Storybook dev mode
 
 0. Fork the repository and create your branch from main.
 1. Run `yarn` in the repository root.
-2. Run `yarn srorybook`.
+2. Run `yarn storybook`.
 3. Run `yarn gen <ComponentName>`
 4. Then you got scaffold like this
 
 ```shell
-ryota.murakami@MacBook-Pro ~/l/mui-storybook (main)> yarn gen Paper
+yarn gen Paper
 yarn run v1.22.18
 $ plop Paper
 ✔  ++ /src/components/Paper/Paper.tsx
@@ -101,6 +101,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/vite-redux-toolkit-starter/laststance/vite-redux-toolkit-starter/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/vite-redux-toolkit-starter/laststance/vite-redux-toolkit-starter/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/vite-redux-toolkit-starter/laststance/vite-redux-toolkit-starter/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
+    <td align="center"><a href=""><img src="https://avatars1.githubusercontent.com/u/65693649?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sai Tharun</b></sub></a><br /></td>
   </tr>
 </table>
 
